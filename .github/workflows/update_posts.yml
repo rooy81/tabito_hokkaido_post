@@ -16,5 +16,5 @@ jobs:
       - name: Run upload script
         env:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
-          GITHUB_TOKEN_PAT: ${{ secrets.MY_GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: python update_posts.py
