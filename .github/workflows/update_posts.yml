@@ -1,0 +1,20 @@
+name: Update posts.json daily
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 毎日日本時間 朝5時
+  workflow_dispatch:       # 手動実行も可能
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Run upload script
+        env:
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_PAT }}
+        run: python update_posts.py
