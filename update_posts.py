@@ -5,7 +5,7 @@ import base64
 import os
 
 INSTAGRAM_TOKEN = os.environ['INSTAGRAM_TOKEN']
-GITHUB_TOKEN    = os.environ['GITHUB_TOKEN_PAT']
+GITHUB_TOKEN    = os.environ['MY_GITHUB_TOKEN']
 GITHUB_REPO     = 'rooy81/tabito_hokkaido_post'
 GITHUB_FILE     = 'posts.json'
 
