@@ -32,13 +32,8 @@
       background: #c7e1c4;
       border-bottom: 1px solid #aecbab;
     }
-    .nav-logo {
-      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
-      font-weight: 700; font-size: 1.1rem;
-      color: #1a2418; text-decoration: none;
-      letter-spacing: 0.06em; white-space: nowrap;
-    }
-    .nav-logo:hover { color: #2a4a28; }
+    .nav-logo { text-decoration: none; display: flex; align-items: center; }
+    .nav-logo img { height: 32px; width: auto; object-fit: contain; display: block; }
     .nav-right { display: flex; align-items: center; gap: 16px; }
     .nav-hotels {
       color: #1a2418; font-size: 0.78rem;
@@ -292,7 +287,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 12px 16px; }
-      .nav-logo { font-size: 0.95rem; }
+      .nav-logo img { height: 26px; }
       .nav-hotels { display: none; }
       .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .gallery-section { padding: 20px 12px 60px; }
@@ -315,7 +310,7 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <a class="nav-logo" href="#">旅と北海道</a>
+  <a class="nav-logo" href="#"><img src="./logo.jpg" alt="旅と北海道"></a>
   <div class="nav-right">
     <a class="nav-hotels" href="hotels.html">🏨 オススメの宿</a>
     <div class="nav-social">
