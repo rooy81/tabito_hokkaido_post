@@ -54,26 +54,36 @@
     /* ── HERO ── */
     .hero {
       margin-top: 61px;
-      padding: 48px 24px 36px;
-      background: #c7e1c4;
+      padding: 56px 24px 44px;
+      position: relative; overflow: hidden;
       text-align: center;
     }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('./hotels-hero.jpg') center/cover no-repeat;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(26,36,24,0.52) 0%, rgba(26,36,24,0.38) 50%, rgba(26,36,24,0.58) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; }
     .hero-eyebrow {
-      display: inline-block; color: #3a5a38; font-size: 0.68rem;
+      display: inline-block; color: var(--main); font-size: 0.68rem;
       letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 12px;
-      border: 1px solid rgba(58,90,56,0.4); padding: 4px 14px; border-radius: 100px;
+      border: 1px solid rgba(199,225,196,0.5); padding: 4px 14px; border-radius: 100px;
       font-weight: 500;
     }
     .hero h1 {
       font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
       font-size: clamp(1.8rem, 5vw, 3rem);
-      color: #1a2418; line-height: 1.2; margin-bottom: 10px;
-      letter-spacing: 0.04em;
+      color: #fff; line-height: 1.2; margin-bottom: 12px;
+      letter-spacing: 0.04em; text-shadow: 0 2px 16px rgba(0,0,0,0.3);
     }
     .hero-sub {
-      color: rgba(26,36,24,0.65); font-size: 0.9rem;
-      font-weight: 500; line-height: 1.7;
+      color: rgba(255,255,255,0.88); font-size: 0.9rem;
+      font-weight: 700; line-height: 1.8; max-width: 500px; margin: 0 auto;
     }
+    .hero-sub .fire { font-style: normal; }
 
     /* ── FILTER ── */
     .filter-bar {
@@ -271,9 +281,12 @@
 
 <!-- ── HERO ── -->
 <div class="hero">
-  <span class="hero-eyebrow">Roy's Pick</span>
-  <h1>オススメの宿</h1>
-  <p class="hero-sub">実際に泊まって良かった宿だけを厳選。<br>TikTokで紹介した宿をまとめました。</p>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Roy's Pick</span>
+    <h1>北海道で泊まるならココ</h1>
+    <p class="hero-sub">実際に泊まった宿だけを紹介！<br>TikTokで予約すると、楽天ポイント4000pt還元！<br>更に、20%OFFになるキャンペーンも随時実施中🔥</p>
+  </div>
 </div>
 
 <!-- ── FILTER ── -->
