@@ -3,273 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>旅人北海道 — 北海道 Instagram Gallery</title>
+  <title>旅人北海道 — 北海道観光ガイド</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #0a0f1c;
-      --navy-mid: #141a2e;
-      --ice: #7ec8e3;
-      --ice-light: #b8e4f2;
-      --white: #f8f9fa;
-      --gray: #6c757d;
-      --card-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      --main:    #c7e1c4;
+      --main-dk: #8db88a;
+      --accent:  #ff5757;
+      --dark:    #1a2418;
+      --dark-mid:#2a3828;
+      --white:   #f8faf8;
+      --gray:    #6c7a6c;
+      --card-shadow: 0 4px 24px rgba(0,0,0,0.09);
       --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
     }
 
     html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #f2f5f2; color: #1a2418; min-height: 100vh; }
 
-    body {
-      font-family: 'Noto Sans JP', sans-serif;
-      background: #f0f2f5;
-      color: #1a1a2e;
-      min-height: 100vh;
-    }
-
-    /* ────────────── NAV ────────────── */
+    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 32px;
-      background: rgba(10,15,28,0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(126,200,227,0.15);
+      padding: 14px 28px;
+      background: rgba(26,36,24,0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(199,225,196,0.18);
     }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      color: #fff;
-      font-size: 1.25rem;
-      letter-spacing: 0.15em;
-      text-decoration: none;
+    .nav-logo-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      display: block;
     }
-    .nav-logo span { color: var(--ice); }
-    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
     .nav-hotels {
-      color: var(--ice-light); font-size: 0.8rem;
-      text-decoration: none; letter-spacing: 0.05em;
-      border: 1px solid rgba(126,200,227,0.4);
+      color: var(--main); font-size: 0.78rem;
+      text-decoration: none; letter-spacing: 0.04em;
+      border: 1px solid rgba(199,225,196,0.45);
       padding: 6px 14px; border-radius: 100px;
-      transition: all var(--transition);
-      white-space: nowrap;
+      transition: all var(--transition); white-space: nowrap;
     }
-    .nav-hotels:hover { background: rgba(126,200,227,0.15); color: #fff; border-color: var(--ice); }
-    .nav-ig {
-      display: flex; align-items: center; gap: 8px;
-      color: var(--ice-light); font-size: 0.8rem;
-      text-decoration: none; letter-spacing: 0.05em;
-      transition: color var(--transition);
+    .nav-hotels:hover { background: rgba(199,225,196,0.15); color: #fff; border-color: var(--main); }
+    .nav-social { display: flex; align-items: center; gap: 12px; }
+    .nav-icon {
+      display: flex; align-items: center; justify-content: center;
+      width: 34px; height: 34px; border-radius: 50%;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none; transition: color var(--transition), background var(--transition);
     }
-    .nav-ig:hover { color: #fff; }
-    .nav-ig svg { width: 18px; height: 18px; }
+    .nav-icon:hover { color: #fff; background: rgba(199,225,196,0.15); }
+    .nav-icon svg { width: 18px; height: 18px; }
 
-    /* ────────────── HERO ────────────── */
+    /* ── HERO ── */
     .hero {
-      position: relative;
-      min-height: 100vh;
+      position: relative; min-height: 100svh;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
-      text-align: center;
-      background: linear-gradient(160deg, #0a0f1c 0%, #0d1f3c 50%, #0a2540 100%);
-      overflow: hidden;
+      text-align: center; overflow: hidden;
       padding: 120px 24px 80px;
     }
-    .hero::before {
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('./hero.jpg') center/cover no-repeat;
+    }
+    .hero-bg::after {
       content: '';
       position: absolute; inset: 0;
-      background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80') center/cover no-repeat;
-      opacity: 0.22;
+      background: linear-gradient(160deg, rgba(26,36,24,0.55) 0%, rgba(26,36,24,0.35) 50%, rgba(26,36,24,0.6) 100%);
     }
-    .hero-content { position: relative; z-index: 1; max-width: 760px; }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
     .hero-eyebrow {
-      display: inline-block;
-      color: var(--ice);
-      font-size: 0.75rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      border: 1px solid rgba(126,200,227,0.4);
-      padding: 6px 18px;
-      border-radius: 100px;
+      display: inline-block; color: var(--main); font-size: 0.7rem;
+      letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 18px;
+      border: 1px solid rgba(199,225,196,0.5); padding: 5px 16px; border-radius: 100px;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 8vw, 5.5rem);
-      color: #fff;
-      line-height: 1.05;
-      margin-bottom: 12px;
-      letter-spacing: -0.01em;
+      font-size: clamp(2.4rem, 7vw, 4.8rem);
+      color: #fff; line-height: 1.1; margin-bottom: 18px;
+      letter-spacing: -0.01em; text-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
-    .hero h1 em { font-style: italic; color: var(--ice-light); }
     .hero-sub {
-      color: rgba(255,255,255,0.65);
-      font-size: clamp(0.9rem, 2vw, 1.05rem);
-      font-weight: 300;
-      margin-bottom: 48px;
-      line-height: 1.7;
-    }
-    .hero-stats { display: flex; gap: 48px; justify-content: center; flex-wrap: wrap; }
-    .stat { text-align: center; }
-    .stat-num {
-      display: block;
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem; color: #fff; line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.7rem; color: var(--ice);
-      letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px;
+      color: rgba(255,255,255,0.78); font-size: clamp(0.88rem, 2vw, 1rem);
+      font-weight: 300; line-height: 1.8; max-width: 480px; margin: 0 auto;
     }
     .hero-scroll {
-      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-      display: flex; flex-direction: column; align-items: center; gap: 8px;
-      color: rgba(255,255,255,0.4); font-size: 0.7rem; letter-spacing: 0.1em;
-      animation: bounce 2s ease-in-out infinite;
+      position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.45); font-size: 0.65rem; letter-spacing: 0.15em;
+      animation: bounce 2.2s ease-in-out infinite;
     }
     @keyframes bounce {
       0%,100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(8px); }
+      50%      { transform: translateX(-50%) translateY(8px); }
     }
-    .hero-scroll svg { width: 20px; height: 20px; }
+    .hero-scroll svg { width: 18px; height: 18px; }
 
-    /* ────────────── FILTERS ────────────── */
+    /* ── FILTERS ── */
     .filters-wrap {
       position: sticky; top: 61px; z-index: 90;
-      background: rgba(240,242,245,0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #dde1e9;
-      padding: 0 24px;
+      background: rgba(242,245,242,0.96);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid #dce5dc;
+      padding: 0 20px;
     }
     .area-tabs {
-      display: flex; gap: 4px; overflow-x: auto; padding: 14px 0 10px;
+      display: flex; gap: 4px; overflow-x: auto; padding: 12px 0 8px;
       scrollbar-width: none;
     }
     .area-tabs::-webkit-scrollbar { display: none; }
     .area-btn {
-      flex-shrink: 0; padding: 8px 18px; border-radius: 100px;
-      border: 1.5px solid #c8cdd8; background: #fff; color: #444;
-      font-family: 'Noto Sans JP', sans-serif; font-size: 0.82rem;
+      flex-shrink: 0; padding: 7px 16px; border-radius: 100px;
+      border: 1.5px solid #c5d0c5; background: #fff; color: #4a5a4a;
+      font-family: 'Noto Sans JP', sans-serif; font-size: 0.8rem;
       font-weight: 500; cursor: pointer; transition: all var(--transition);
       white-space: nowrap;
     }
-    .area-btn:hover { border-color: var(--navy); color: var(--navy); }
-    .area-btn.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .area-btn:hover { border-color: var(--dark); color: var(--dark); }
+    .area-btn.active { background: var(--dark); border-color: var(--dark); color: var(--main); }
 
     .cat-chips {
-      display: flex; gap: 6px; overflow-x: auto; padding: 0 0 12px;
+      display: flex; gap: 6px; overflow-x: auto; padding: 0 0 10px;
       scrollbar-width: none;
     }
     .cat-chips::-webkit-scrollbar { display: none; }
     .cat-btn {
-      flex-shrink: 0; padding: 5px 14px; border-radius: 100px;
-      border: 1.5px solid transparent; background: #e8ecf2; color: #666;
-      font-family: 'Noto Sans JP', sans-serif; font-size: 0.78rem;
+      flex-shrink: 0; padding: 4px 13px; border-radius: 100px;
+      border: 1.5px solid transparent; background: #e4ece4; color: #5a6a5a;
+      font-family: 'Noto Sans JP', sans-serif; font-size: 0.76rem;
       cursor: pointer; transition: all var(--transition);
     }
-    .cat-btn:hover { background: #dce1eb; color: #333; }
+    .cat-btn:hover { background: #d5e5d5; color: #2a3a2a; }
     .cat-btn.active {
-      border-color: var(--ice); background: rgba(126,200,227,0.15);
-      color: var(--navy); font-weight: 500;
+      border-color: var(--accent); background: rgba(255,87,87,0.1);
+      color: var(--accent); font-weight: 600;
     }
 
-    /* ────────────── GALLERY ────────────── */
-    .gallery-section { max-width: 1280px; margin: 0 auto; padding: 40px 20px 80px; }
+    /* ── GALLERY SECTION ── */
+    .gallery-section { max-width: 1280px; margin: 0 auto; padding: 32px 16px 80px; }
 
-    /* ── ホテルバナー ── */
+    /* ── HOTEL BANNER ── */
     .hotel-banner {
       margin: 0 0 28px; border-radius: 14px;
       text-decoration: none; display: flex;
       align-items: center; justify-content: space-between;
       gap: 16px; padding: 20px 28px;
-      background: linear-gradient(110deg, #0a1828 0%, #0d2440 55%, #0a3050 100%);
-      border: 1px solid rgba(126,200,227,0.25);
+      background: linear-gradient(110deg, var(--dark) 0%, var(--dark-mid) 60%, #1e3020 100%);
+      border: 1px solid rgba(199,225,196,0.2);
       box-shadow: 0 4px 20px rgba(0,0,0,0.12);
       transition: box-shadow 0.25s, transform 0.25s;
       position: relative; overflow: hidden;
     }
     .hotel-banner::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(90deg, transparent 60%, rgba(126,200,227,0.06) 100%);
+      background: linear-gradient(90deg, transparent 55%, rgba(199,225,196,0.07) 100%);
       pointer-events: none;
     }
     .hotel-banner:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.18); transform: translateY(-2px); }
     .hotel-banner-left { display: flex; flex-direction: column; gap: 4px; }
     .hotel-banner-eyebrow {
-      font-size: 0.68rem; letter-spacing: 0.25em;
-      color: var(--ice); text-transform: uppercase; font-weight: 500;
+      font-size: 0.66rem; letter-spacing: 0.25em;
+      color: var(--main); text-transform: uppercase; font-weight: 500;
     }
     .hotel-banner-title {
-      font-size: 1.05rem; font-weight: 700; color: #fff;
-      letter-spacing: 0.03em; line-height: 1.3;
+      font-size: 1rem; font-weight: 700; color: #fff;
+      letter-spacing: 0.02em; line-height: 1.35;
     }
-    .hotel-banner-sub { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
+    .hotel-banner-sub { font-size: 0.76rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
     .hotel-banner-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-    .hotel-banner-icon { font-size: 2rem; line-height: 1; }
+    .hotel-banner-icon { font-size: 1.9rem; line-height: 1; }
     .hotel-banner-btn {
-      display: flex; align-items: center; gap: 6px;
-      background: var(--ice); color: #0a1828;
-      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em;
+      display: flex; align-items: center; gap: 5px;
+      background: var(--accent); color: #fff;
+      font-size: 0.76rem; font-weight: 700; letter-spacing: 0.05em;
       padding: 9px 18px; border-radius: 100px; white-space: nowrap;
       transition: background 0.2s;
     }
-    .hotel-banner:hover .hotel-banner-btn { background: var(--ice-light); }
-    .hotel-banner-btn svg { width: 13px; height: 13px; }
+    .hotel-banner:hover .hotel-banner-btn { background: #e04040; }
+    .hotel-banner-btn svg { width: 12px; height: 12px; }
 
+    /* ── GALLERY HEADER ── */
     .gallery-header {
       display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+      margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
     }
-    .gallery-count { font-size: 0.85rem; color: var(--gray); }
-    .gallery-count strong { color: var(--navy); }
+    .gallery-count { font-size: 0.82rem; color: var(--gray); }
+    .gallery-count strong { color: var(--dark); }
 
+    /* ── GRID ── */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
     }
 
-    /* ────────────── CARD ────────────── */
+    /* ── CARD ── */
     .card {
-      background: #fff; border-radius: 16px; overflow: hidden;
+      background: #fff; border-radius: 14px; overflow: hidden;
       box-shadow: var(--card-shadow);
       transition: transform var(--transition), box-shadow var(--transition);
-      opacity: 0; transform: translateY(20px);
-      animation: fadeUp 0.5s forwards;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp 0.45s forwards;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(0,0,0,0.13); }
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
     .card.hidden { display: none; }
 
     .card-img-wrap {
       position: relative; aspect-ratio: 1/1;
-      overflow: hidden; background: #e8ecf2;
+      overflow: hidden; background: #dce8dc;
     }
     .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
     .card:hover .card-img-wrap img { transform: scale(1.05); }
 
     .card-area-badge {
-      position: absolute; top: 12px; left: 12px;
-      background: rgba(10,15,28,0.75); backdrop-filter: blur(6px);
-      color: var(--ice-light); font-size: 0.72rem; font-weight: 700;
-      letter-spacing: 0.08em; padding: 4px 10px; border-radius: 100px;
+      position: absolute; top: 10px; left: 10px;
+      background: rgba(26,36,24,0.78); backdrop-filter: blur(6px);
+      color: var(--main); font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.07em; padding: 3px 9px; border-radius: 100px;
     }
     .card-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(10,15,28,0.88) 0%, transparent 55%);
+      background: linear-gradient(to top, rgba(26,36,24,0.85) 0%, transparent 55%);
       opacity: 0; transition: opacity var(--transition);
-      display: flex; align-items: flex-end; padding: 20px;
+      display: flex; align-items: flex-end; padding: 16px;
     }
     .card:hover .card-overlay { opacity: 1; }
     .card-overlay-caption {
-      color: rgba(255,255,255,0.9); font-size: 0.82rem; line-height: 1.5;
+      color: rgba(255,255,255,0.9); font-size: 0.8rem; line-height: 1.5;
       display: -webkit-box; -webkit-line-clamp: 3;
       -webkit-box-orient: vertical; overflow: hidden;
     }
     .card-ig-btn {
-      position: absolute; top: 12px; right: 12px;
-      width: 36px; height: 36px; background: rgba(255,255,255,0.15);
+      position: absolute; top: 10px; right: 10px;
+      width: 34px; height: 34px; background: rgba(255,255,255,0.15);
       backdrop-filter: blur(6px); border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       text-decoration: none; opacity: 0;
@@ -277,64 +249,69 @@
     }
     .card:hover .card-ig-btn { opacity: 1; }
     .card-ig-btn:hover { background: rgba(255,255,255,0.3); }
-    .card-ig-btn svg { width: 16px; height: 16px; color: #fff; }
+    .card-ig-btn svg { width: 15px; height: 15px; color: #fff; }
 
-    .card-body { padding: 16px 18px 18px; }
-    .card-cats { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
-    .tag { font-size: 0.7rem; padding: 3px 10px; border-radius: 100px; background: #eef2f8; color: #556; font-weight: 500; }
-    .tag.グルメ       { background: #fff0e8; color: #c05a1f; }
-    .tag.観光スポット  { background: #e3f2fd; color: #1565c0; }
-    .tag.宿泊         { background: #fce4ec; color: #c2185b; }
-    .tag.イベント      { background: #f3e5f5; color: #7b1fa2; }
-    .tag.旅行プラン    { background: #e0f7fa; color: #00695c; }
-    .tag.体験         { background: #e8f5ea; color: #2e7d32; }
-    .tag.お土産       { background: #fff8e1; color: #f57f17; }
-    .tag.温泉         { background: #e1f5fe; color: #0277bd; }
+    .card-body { padding: 14px 16px 16px; }
+    .card-cats { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+    .tag {
+      font-size: 0.68rem; padding: 2px 9px; border-radius: 100px;
+      background: #edf2ed; color: #4a5a4a; font-weight: 500;
+    }
+    .tag.グルメ        { background: #fff0e8; color: #c05a1f; }
+    .tag.観光スポット   { background: #e8f4e8; color: #2e6e2e; }
+    .tag.宿泊          { background: #fce4ec; color: #c2185b; }
+    .tag.イベント       { background: #f3f0ff; color: #6a3fa0; }
+    .tag.旅行プラン     { background: #e0f7fa; color: #00695c; }
+    .tag.体験          { background: #fffbe0; color: #8a6500; }
+    .tag.お土産        { background: #ffeee0; color: #b85000; }
+    .tag.温泉          { background: #e0f0ff; color: #1a5fa0; }
 
     .card-caption {
-      font-size: 0.82rem; color: #444; line-height: 1.6;
+      font-size: 0.8rem; color: #444; line-height: 1.6;
       display: -webkit-box; -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 12px;
+      -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 10px;
     }
     .card-footer { display: flex; align-items: center; justify-content: space-between; }
-    .card-date { font-size: 0.72rem; color: #999; }
-    .card-likes { display: flex; align-items: center; gap: 4px; font-size: 0.72rem; color: #c05a1f; }
-    .card-likes svg { width: 13px; height: 13px; }
+    .card-date { font-size: 0.7rem; color: #999; }
 
-    /* ────────────── LOADING ────────────── */
-    .loading { grid-column: 1/-1; text-align: center; padding: 80px 24px; color: var(--gray); }
+    /* ── LOADING ── */
+    .loading { grid-column: 1/-1; text-align: center; padding: 72px 24px; color: var(--gray); }
     .loading-spinner {
-      width: 40px; height: 40px; border: 3px solid #dde1e9;
-      border-top-color: var(--ice); border-radius: 50%;
-      animation: spin 0.8s linear infinite; margin: 0 auto 16px;
+      width: 38px; height: 38px; border: 3px solid #dce8dc;
+      border-top-color: var(--main-dk); border-radius: 50%;
+      animation: spin 0.8s linear infinite; margin: 0 auto 14px;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    .no-results { grid-column: 1/-1; text-align: center; padding: 80px 24px; color: var(--gray); }
-    .no-results svg { width: 48px; height: 48px; opacity: 0.3; margin-bottom: 16px; }
+    .no-results { grid-column: 1/-1; text-align: center; padding: 72px 24px; color: var(--gray); }
+    .no-results svg { width: 44px; height: 44px; opacity: 0.28; margin-bottom: 14px; }
 
-    /* ────────────── FOOTER ────────────── */
+    /* ── FOOTER ── */
     footer {
-      background: var(--navy); color: rgba(255,255,255,0.5);
-      text-align: center; padding: 40px 24px; font-size: 0.8rem; line-height: 1.8;
+      background: var(--dark); color: rgba(255,255,255,0.45);
+      text-align: center; padding: 36px 24px; font-size: 0.78rem; line-height: 1.8;
     }
-    footer a { color: var(--ice); text-decoration: none; }
+    footer a { color: var(--main); text-decoration: none; }
 
-    /* ────────────── RESPONSIVE ────────────── */
+    /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      nav { padding: 14px 18px; }
-      .nav-ig span, .nav-ig svg ~ * { display: none; }
-      .nav-hotels { font-size: 0.72rem; padding: 5px 10px; }
-      .hotel-banner { padding: 16px 18px; border-radius: 12px; }
-      .hotel-banner-title { font-size: 0.92rem; }
-      .hotel-banner-icon { font-size: 1.6rem; }
-      .hotel-banner-btn { font-size: 0.72rem; padding: 7px 14px; }
-      .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .gallery-section { padding: 24px 14px 60px; }
+      nav { padding: 12px 16px; }
+      .nav-logo-img { height: 26px; }
+      .nav-hotels { display: none; }
+      .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .gallery-section { padding: 20px 12px 60px; }
+      .filters-wrap { padding: 0 12px; }
+      .hotel-banner { padding: 14px 16px; gap: 10px; }
+      .hotel-banner-title { font-size: 0.88rem; }
+      .hotel-banner-icon { display: none; }
+      .hotel-banner-btn { font-size: 0.7rem; padding: 7px 13px; }
     }
     @media (max-width: 480px) {
-      .gallery { grid-template-columns: 1fr; }
-      .hero-stats { gap: 28px; }
+      .gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .card-body { padding: 10px 11px 12px; }
+      .card-caption { font-size: 0.75rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero-sub { font-size: 0.82rem; }
     }
   </style>
 </head>
@@ -342,30 +319,38 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <a class="nav-logo" href="#"><span>旅人</span> HOKKAIDO</a>
+  <a href="#"><img class="nav-logo-img" src="./logo.png" alt="旅人北海道"></a>
   <div class="nav-right">
     <a class="nav-hotels" href="hotels.html">🏨 おすすめの宿</a>
-    <a class="nav-ig" href="https://www.instagram.com/tabito_hokkaido" target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-      @tabito_hokkaido
-    </a>
+    <div class="nav-social">
+      <!-- TikTok -->
+      <a class="nav-icon" href="https://www.tiktok.com/@tabito_hokkaido" target="_blank" rel="noopener" title="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.91a8.2 8.2 0 004.79 1.53V7a4.85 4.85 0 01-1.02-.31z"/>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a class="nav-icon" href="https://www.instagram.com/tabito_hokkaido" target="_blank" rel="noopener" title="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </nav>
 
 <!-- ── HERO ── -->
 <section class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Hokkaido Travel Guide</div>
-    <h1>北の大地の<br><em>絶景と美食</em></h1>
+    <h1>北海道観光ガイド</h1>
     <p class="hero-sub">
-      北海道の魅力を発信するInstagramギャラリー。<br>
-      エリアとカテゴリで気になる投稿を見つけよう。
+      SNSの投稿を見やすくまとめました！<br>
+      エリアとカテゴリを設定して、気になる投稿を見つけよう。
     </p>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num" id="stat-posts">0</span><span class="stat-label">投稿数</span></div>
-      <div class="stat"><span class="stat-num" id="stat-areas">0</span><span class="stat-label">エリア</span></div>
-      <div class="stat"><span class="stat-num" id="stat-cats">0</span><span class="stat-label">カテゴリ</span></div>
-    </div>
   </div>
   <div class="hero-scroll">
     <span>SCROLL</span>
@@ -376,7 +361,7 @@
 <!-- ── FILTERS ── -->
 <div class="filters-wrap">
   <div class="area-tabs" id="daichiTabs"></div>
-  <div class="area-tabs" id="areaTabs" style="padding-top:4px;"></div>
+  <div class="area-tabs" id="areaTabs" style="padding-top:2px;"></div>
   <div class="cat-chips" id="catChips"></div>
 </div>
 
@@ -400,9 +385,7 @@
   </a>
 
   <div class="gallery-header">
-    <div class="gallery-count">
-      <strong id="visibleCount">0</strong> 件の投稿
-    </div>
+    <div class="gallery-count"><strong id="visibleCount">0</strong> 件の投稿</div>
   </div>
   <div class="gallery" id="gallery">
     <div class="loading">
@@ -414,27 +397,27 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;margin-bottom:8px;">旅人北海道</p>
-  <p>北海道の魅力を発信するInstagramアカウント</p>
-  <p style="margin-top:12px;"><a href="https://www.instagram.com/tabito_hokkaido" target="_blank">@tabito_hokkaido</a></p>
-  <p style="margin-top:16px;font-size:0.7rem;">Powered by Instagram Graph API + Make.com + GitHub Pages</p>
+  <p style="font-family:'Playfair Display',serif;font-size:1rem;color:#fff;margin-bottom:6px;">旅人北海道</p>
+  <p>北海道の魅力を発信するInstagram・TikTokアカウント</p>
+  <p style="margin-top:10px;">
+    <a href="https://www.instagram.com/tabito_hokkaido" target="_blank">@tabito_hokkaido</a>
+    &nbsp;／&nbsp;
+    <a href="https://www.tiktok.com/@tabito_hokkaido" target="_blank">TikTok</a>
+  </p>
 </footer>
 
 <script>
 let allPosts = [];
 let activeDaichi = 'すべて';
-let activeArea = 'すべて';
-let activeCats = new Set();
+let activeArea   = 'すべて';
+let activeCats   = new Set();
 
 async function loadPosts() {
   try {
     const res = await fetch('./posts.json');
-    if (!res.ok) throw new Error('posts.json が見つかりません');
+    if (!res.ok) throw new Error('not found');
     return await res.json();
-  } catch (e) {
-    console.warn('posts.json の読み込みに失敗しました:', e.message);
-    return [];
-  }
+  } catch(e) { return []; }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -442,49 +425,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   const daichis = [...new Set(allPosts.map(p => p.daichi).filter(Boolean))];
   const areas   = [...new Set(allPosts.map(p => p.area).filter(Boolean))];
   const cats    = [...new Set(allPosts.flatMap(p => p.categories || []).filter(Boolean))];
-  animateCount('stat-posts', allPosts.length);
-  animateCount('stat-areas', areas.length);
-  animateCount('stat-cats',  cats.length);
   buildDaichiTabs(daichis);
   buildAreaTabs(areas);
   buildCatChips(cats);
   renderGallery();
 });
-
-function animateCount(id, target) {
-  const el = document.getElementById(id);
-  let n = 0;
-  const step = Math.ceil(target / 30);
-  const t = setInterval(() => {
-    n = Math.min(n + step, target);
-    el.textContent = n;
-    if (n >= target) clearInterval(t);
-  }, 40);
-}
-
-function buildDaichiTabs(daichis) {
-  const wrap = document.getElementById('daichiTabs');
-  const ordered = ['道央', '道東', '道南', '道北'].filter(d => daichis.includes(d));
-  ['すべて', ...ordered].forEach(d => {
-    const btn = document.createElement('button');
-    btn.className = 'area-btn' + (d === 'すべて' ? ' active' : '');
-    btn.textContent = d;
-    btn.onclick = () => {
-      activeDaichi = d;
-      activeArea = 'すべて';
-      document.querySelectorAll('#daichiTabs .area-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('#areaTabs .area-btn').forEach(b => {
-        const show = d === 'すべて' || isAreaInDaichi(b.textContent, d) || b.textContent === 'すべて';
-        b.style.display = show ? '' : 'none';
-        if (b.textContent === 'すべて') b.classList.add('active');
-        else b.classList.remove('active');
-      });
-      btn.classList.add('active');
-      renderGallery();
-    };
-    wrap.appendChild(btn);
-  });
-}
 
 const DAICHI_MAP_JS = {
   '道央': ['札幌近郊（千歳等）','小樽近郊','ニセコ','洞爺','登別/白老/洞爺湖/苫小牧方面','トマム','定山渓','日高'],
@@ -494,6 +439,28 @@ const DAICHI_MAP_JS = {
 };
 function isAreaInDaichi(area, daichi) {
   return (DAICHI_MAP_JS[daichi] || []).includes(area);
+}
+
+function buildDaichiTabs(daichis) {
+  const wrap = document.getElementById('daichiTabs');
+  const ordered = ['道央','道東','道南','道北'].filter(d => daichis.includes(d));
+  ['すべて', ...ordered].forEach(d => {
+    const btn = document.createElement('button');
+    btn.className = 'area-btn' + (d === 'すべて' ? ' active' : '');
+    btn.textContent = d;
+    btn.onclick = () => {
+      activeDaichi = d; activeArea = 'すべて';
+      document.querySelectorAll('#daichiTabs .area-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('#areaTabs .area-btn').forEach(b => {
+        const show = d === 'すべて' || isAreaInDaichi(b.textContent, d) || b.textContent === 'すべて';
+        b.style.display = show ? '' : 'none';
+        b.classList.toggle('active', b.textContent === 'すべて');
+      });
+      btn.classList.add('active');
+      renderGallery();
+    };
+    wrap.appendChild(btn);
+  });
 }
 
 function buildAreaTabs(areas) {
@@ -540,7 +507,7 @@ function renderGallery() {
 
   const filtered = allPosts.filter(p => {
     const daichiOk = activeDaichi === 'すべて' || p.daichi === activeDaichi;
-    const areaOk   = activeArea === 'すべて' || p.area === activeArea;
+    const areaOk   = activeArea   === 'すべて' || p.area   === activeArea;
     const catOk    = activeCats.size === 0 || (p.categories || []).some(c => activeCats.has(c));
     return daichiOk && areaOk && catOk;
   });
@@ -555,17 +522,23 @@ function renderGallery() {
   filtered.forEach((post, i) => {
     const card = document.createElement('div');
     card.className = 'card';
-    card.style.animationDelay = `${i * 60}ms`;
-    const cats = (post.categories || []);
+    card.style.animationDelay = `${Math.min(i, 20) * 50}ms`;
+    const cats   = post.categories || [];
     const imgSrc = post.thumbnail_url || post.media_url || '';
-    const likes = post.likes || 0;
     card.innerHTML = `
       <div class="card-img-wrap">
-        ${imgSrc ? `<img src="${imgSrc}" alt="${post.area || ''}" loading="lazy">` : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#1a2a3a;color:#7ec8e3;font-size:0.8rem;">No Image</div>`}
+        ${imgSrc
+          ? `<img src="${imgSrc}" alt="${post.area || ''}" loading="lazy">`
+          : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#2a3828;color:#c7e1c4;font-size:0.78rem;">No Image</div>`
+        }
         <div class="card-area-badge">${post.area || ''}</div>
         <div class="card-overlay"><p class="card-overlay-caption">${post.caption || ''}</p></div>
-        <a class="card-ig-btn" href="${post.instagram_url || post.permalink || '#'}" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <a class="card-ig-btn" href="${post.permalink || '#'}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
         </a>
       </div>
       <div class="card-body">
@@ -573,7 +546,6 @@ function renderGallery() {
         <p class="card-caption">${post.caption || ''}</p>
         <div class="card-footer">
           <span class="card-date">${post.timestamp ? formatDate(post.timestamp) : ''}</span>
-          ${likes > 0 ? `<span class="card-likes"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>${likes.toLocaleString()}</span>` : ''}
         </div>
       </div>`;
     gallery.appendChild(card);
@@ -586,6 +558,5 @@ function formatDate(dateStr) {
   return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
 }
 </script>
-
 </body>
 </html>
