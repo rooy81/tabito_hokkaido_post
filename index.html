@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>旅人北海道 — 北海道観光ガイド</title>
+  <title>旅と北海道 — 北海道観光ガイド</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <style>
@@ -29,39 +29,39 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 14px 28px;
-      background: rgba(26,36,24,0.88);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(199,225,196,0.18);
+      background: #c7e1c4;
+      border-bottom: 1px solid #aecbab;
     }
-    .nav-logo-img {
-      height: 32px;
-      width: auto;
-      object-fit: contain;
-      display: block;
+    .nav-logo {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
+      font-weight: 700; font-size: 1.1rem;
+      color: #1a2418; text-decoration: none;
+      letter-spacing: 0.06em; white-space: nowrap;
     }
+    .nav-logo:hover { color: #2a4a28; }
     .nav-right { display: flex; align-items: center; gap: 16px; }
     .nav-hotels {
-      color: var(--main); font-size: 0.78rem;
+      color: #1a2418; font-size: 0.78rem;
       text-decoration: none; letter-spacing: 0.04em;
-      border: 1px solid rgba(199,225,196,0.45);
+      border: 1.5px solid rgba(26,36,24,0.35);
       padding: 6px 14px; border-radius: 100px;
       transition: all var(--transition); white-space: nowrap;
+      font-weight: 500;
     }
-    .nav-hotels:hover { background: rgba(199,225,196,0.15); color: #fff; border-color: var(--main); }
-    .nav-social { display: flex; align-items: center; gap: 12px; }
+    .nav-hotels:hover { background: rgba(26,36,24,0.1); border-color: #1a2418; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
     .nav-icon {
       display: flex; align-items: center; justify-content: center;
       width: 34px; height: 34px; border-radius: 50%;
-      color: rgba(255,255,255,0.65);
+      color: #1a2418;
       text-decoration: none; transition: color var(--transition), background var(--transition);
     }
-    .nav-icon:hover { color: #fff; background: rgba(199,225,196,0.15); }
+    .nav-icon:hover { background: rgba(26,36,24,0.12); }
     .nav-icon svg { width: 18px; height: 18px; }
 
     /* ── HERO ── */
     .hero {
-      position: relative; min-height: 100svh;
+      position: relative; min-height: 52vh;
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
       text-align: center; overflow: hidden;
@@ -83,10 +83,11 @@
       border: 1px solid rgba(199,225,196,0.5); padding: 5px 16px; border-radius: 100px;
     }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
       font-size: clamp(2.4rem, 7vw, 4.8rem);
-      color: #fff; line-height: 1.1; margin-bottom: 18px;
-      letter-spacing: -0.01em; text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      color: #fff; line-height: 1.15; margin-bottom: 18px;
+      letter-spacing: 0.05em; text-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
     .hero-sub {
       color: rgba(255,255,255,0.78); font-size: clamp(0.88rem, 2vw, 1rem);
@@ -153,28 +154,23 @@
       text-decoration: none; display: flex;
       align-items: center; justify-content: space-between;
       gap: 16px; padding: 20px 28px;
-      background: linear-gradient(110deg, var(--dark) 0%, var(--dark-mid) 60%, #1e3020 100%);
-      border: 1px solid rgba(199,225,196,0.2);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      background: #c7e1c4;
+      border: 1px solid #aecbab;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       transition: box-shadow 0.25s, transform 0.25s;
       position: relative; overflow: hidden;
     }
-    .hotel-banner::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(90deg, transparent 55%, rgba(199,225,196,0.07) 100%);
-      pointer-events: none;
-    }
-    .hotel-banner:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.18); transform: translateY(-2px); }
+    .hotel-banner:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.13); transform: translateY(-2px); }
     .hotel-banner-left { display: flex; flex-direction: column; gap: 4px; }
     .hotel-banner-eyebrow {
       font-size: 0.66rem; letter-spacing: 0.25em;
-      color: var(--main); text-transform: uppercase; font-weight: 500;
+      color: #3a5a38; text-transform: uppercase; font-weight: 500;
     }
     .hotel-banner-title {
-      font-size: 1rem; font-weight: 700; color: #fff;
+      font-size: 1rem; font-weight: 700; color: #1a2418;
       letter-spacing: 0.02em; line-height: 1.35;
     }
-    .hotel-banner-sub { font-size: 0.76rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
+    .hotel-banner-sub { font-size: 0.76rem; color: rgba(26,36,24,0.55); margin-top: 2px; }
     .hotel-banner-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
     .hotel-banner-icon { font-size: 1.9rem; line-height: 1; }
     .hotel-banner-btn {
@@ -209,6 +205,8 @@
       transition: transform var(--transition), box-shadow var(--transition);
       opacity: 0; transform: translateY(18px);
       animation: fadeUp 0.45s forwards;
+      text-decoration: none; color: inherit; display: block;
+      cursor: pointer;
     }
     .card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(0,0,0,0.13); }
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
@@ -296,7 +294,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 12px 16px; }
-      .nav-logo-img { height: 26px; }
+      .nav-logo { font-size: 0.95rem; }
       .nav-hotels { display: none; }
       .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .gallery-section { padding: 20px 12px 60px; }
@@ -319,9 +317,9 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <a href="#"><img class="nav-logo-img" src="./logo.png" alt="旅人北海道"></a>
+  <a class="nav-logo" href="#">旅と北海道</a>
   <div class="nav-right">
-    <a class="nav-hotels" href="hotels.html">🏨 おすすめの宿</a>
+    <a class="nav-hotels" href="hotels.html">🏨 オススメの宿</a>
     <div class="nav-social">
       <!-- TikTok -->
       <a class="nav-icon" href="https://www.tiktok.com/@tabito_hokkaido" target="_blank" rel="noopener" title="TikTok">
@@ -520,8 +518,11 @@ function renderGallery() {
   }
 
   filtered.forEach((post, i) => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'card';
+    card.href = post.permalink || '#';
+    card.target = '_blank';
+    card.rel = 'noopener';
     card.style.animationDelay = `${Math.min(i, 20) * 50}ms`;
     const cats   = post.categories || [];
     const imgSrc = post.thumbnail_url || post.media_url || '';
@@ -533,13 +534,6 @@ function renderGallery() {
         }
         <div class="card-area-badge">${post.area || ''}</div>
         <div class="card-overlay"><p class="card-overlay-caption">${post.caption || ''}</p></div>
-        <a class="card-ig-btn" href="${post.permalink || '#'}" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
       </div>
       <div class="card-body">
         <div class="card-cats">${cats.map(c => `<span class="tag ${c}">${c}</span>`).join('')}</div>
