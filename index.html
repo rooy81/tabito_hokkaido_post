@@ -176,6 +176,54 @@
     .hotel-banner:hover .hotel-banner-btn { background: #e04040; }
     .hotel-banner-btn svg { width: 12px; height: 12px; }
 
+    /* ── MAPバナー ── */
+    .map-banner {
+      margin: 0 0 16px; border-radius: 14px;
+      text-decoration: none; display: flex;
+      align-items: center; justify-content: space-between;
+      gap: 16px; padding: 20px 28px;
+      background: url('./map-bg.jpg') center/cover no-repeat;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+      transition: box-shadow 0.25s, transform 0.25s;
+      position: relative; overflow: hidden;
+    }
+    .map-banner::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(100deg, rgba(10,20,15,0.62) 0%, rgba(10,20,15,0.38) 60%, rgba(10,20,15,0.55) 100%);
+      pointer-events: none;
+    }
+    .map-banner:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.28); transform: translateY(-2px); }
+    .map-banner-left { display: flex; flex-direction: column; gap: 4px; }
+    .map-banner-eyebrow {
+      font-size: 0.66rem; letter-spacing: 0.25em; color: var(--accent);
+      text-transform: uppercase; font-weight: 600;
+    }
+    .map-banner-title {
+      font-size: 1rem; font-weight: 700; color: #fff;
+      letter-spacing: 0.02em; line-height: 1.35;
+    }
+    .map-banner-sub { font-size: 0.76rem; color: rgba(255,255,255,0.82); margin-top: 2px; }
+    .map-banner-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .map-banner-price {
+      text-align: center; flex-shrink: 0;
+    }
+    .map-banner-price .price-num {
+      font-size: 1.3rem; font-weight: 700; color: #fff; line-height: 1;
+    }
+    .map-banner-price .price-label {
+      font-size: 0.62rem; color: rgba(255,255,255,0.5); margin-top: 2px;
+    }
+    .map-banner-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: var(--accent); color: #fff;
+      font-size: 0.76rem; font-weight: 700; letter-spacing: 0.04em;
+      padding: 9px 16px; border-radius: 100px; white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .map-banner:hover .map-banner-btn { background: #e04040; }
+    .map-banner-btn svg { width: 12px; height: 12px; }
+
     /* ── GALLERY HEADER ── */
     .gallery-header {
       display: flex; align-items: center; justify-content: space-between;
@@ -296,6 +344,10 @@
       .hotel-banner-title { font-size: 0.88rem; }
       .hotel-banner-icon { display: none; }
       .hotel-banner-btn { font-size: 0.7rem; padding: 7px 13px; }
+      .map-banner { padding: 14px 16px; gap: 10px; }
+      .map-banner-title { font-size: 0.88rem; }
+      .map-banner-price .price-num { font-size: 1.1rem; }
+      .map-banner-btn { font-size: 0.7rem; padding: 7px 13px; }
     }
     @media (max-width: 480px) {
       .gallery { grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -358,6 +410,21 @@
 
 <!-- ── GALLERY ── -->
 <section class="gallery-section">
+
+  <!-- MAPバナー -->
+  <a class="map-banner" href="https://luxury-phoenix-774f06.netlify.app/" target="_blank" rel="noopener">
+    <div class="map-banner-left">
+      <span class="map-banner-eyebrow">New</span>
+      <p class="map-banner-title">旅と北海道MAP</p>
+      <p class="map-banner-sub">Googleマップで使える、2000箇所以上の厳選スポット！</p>
+    </div>
+    <div class="map-banner-right">
+      <span class="map-banner-btn">
+        詳しくはこちら
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9,18 15,12 9,6"/></svg>
+      </span>
+    </div>
+  </a>
 
   <!-- ホテルバナー -->
   <a class="hotel-banner" href="hotels.html">
