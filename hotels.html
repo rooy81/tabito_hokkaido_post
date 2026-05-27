@@ -117,6 +117,7 @@
       box-shadow: var(--card-shadow);
       transition: transform var(--transition), box-shadow var(--transition);
       cursor: pointer;
+      text-decoration: none; color: inherit; display: block;
     }
     .hotel-card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(0,0,0,0.13); }
 
@@ -388,9 +389,11 @@ function renderCards(hotels) {
   empty.classList.remove('show');
 
   hotels.forEach(h => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'hotel-card';
-    card.onclick = () => openModal(h);
+    card.href = h.tiktok_url || '#';
+    card.target = '_blank';
+    card.rel = 'noopener';
 
     const priceStr = h.price_from ? `¥${Number(h.price_from).toLocaleString()}〜` : '';
     const tagsHtml = (h.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
