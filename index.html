@@ -182,7 +182,7 @@
       text-decoration: none; display: flex;
       align-items: center; justify-content: space-between;
       gap: 16px; padding: 20px 28px;
-      background: url('./map-bg.jpg') center/cover no-repeat;
+      background: url('./map-bg.jpg') center 30%/cover no-repeat;
       border: 1px solid rgba(255,255,255,0.15);
       box-shadow: 0 4px 20px rgba(0,0,0,0.18);
       transition: box-shadow 0.25s, transform 0.25s;
@@ -190,7 +190,7 @@
     }
     .map-banner::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(100deg, rgba(10,20,15,0.62) 0%, rgba(10,20,15,0.38) 60%, rgba(10,20,15,0.55) 100%);
+      background: linear-gradient(100deg, rgba(10,20,15,0.45) 0%, rgba(10,20,15,0.22) 60%, rgba(10,20,15,0.38) 100%);
       pointer-events: none;
     }
     .map-banner:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.28); transform: translateY(-2px); }
@@ -414,7 +414,6 @@
   <!-- MAPバナー -->
   <a class="map-banner" href="https://luxury-phoenix-774f06.netlify.app/" target="_blank" rel="noopener">
     <div class="map-banner-left">
-      <span class="map-banner-eyebrow">New</span>
       <p class="map-banner-title">旅と北海道MAP</p>
       <p class="map-banner-sub">Googleマップで使える、2000箇所以上の厳選スポット！</p>
     </div>
