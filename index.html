@@ -188,22 +188,22 @@
       transition: box-shadow 0.25s, transform 0.25s;
       position: relative; overflow: hidden;
     }
-    .map-banner::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(100deg, rgba(10,20,15,0.45) 0%, rgba(10,20,15,0.22) 60%, rgba(10,20,15,0.38) 100%);
-      pointer-events: none;
-    }
     .map-banner:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.28); transform: translateY(-2px); }
     .map-banner-left { display: flex; flex-direction: column; gap: 4px; }
     .map-banner-eyebrow {
-      font-size: 0.66rem; letter-spacing: 0.25em; color: var(--accent);
-      text-transform: uppercase; font-weight: 600;
+      font-size: 0.68rem; letter-spacing: 0.05em; color: var(--accent);
+      font-weight: 800; background: rgba(255,255,255,0.85);
+      display: inline-block; padding: 2px 8px; border-radius: 100px;
+      width: fit-content;
     }
     .map-banner-title {
-      font-size: 1rem; font-weight: 700; color: #fff;
+      font-size: 1rem; font-weight: 800; color: #1a2418;
       letter-spacing: 0.02em; line-height: 1.35;
+      text-shadow: 0 1px 4px rgba(255,255,255,0.6);
     }
-    .map-banner-sub { font-size: 0.76rem; color: rgba(255,255,255,0.82); margin-top: 2px; }
+    .map-banner-sub { font-size: 0.76rem; color: #1a2418; font-weight: 700; margin-top: 2px;
+      text-shadow: 0 1px 3px rgba(255,255,255,0.5);
+    }
     .map-banner-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
     .map-banner-price {
       text-align: center; flex-shrink: 0;
@@ -414,12 +414,13 @@
   <!-- MAPバナー -->
   <a class="map-banner" href="https://luxury-phoenix-774f06.netlify.app/" target="_blank" rel="noopener">
     <div class="map-banner-left">
+      <span class="map-banner-eyebrow">無料お試しあり！</span>
       <p class="map-banner-title">旅と北海道MAP</p>
       <p class="map-banner-sub">Googleマップで使える、2000箇所以上の厳選スポット！</p>
     </div>
     <div class="map-banner-right">
       <span class="map-banner-btn">
-        詳しくはこちら
+        MAPを見る
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9,18 15,12 9,6"/></svg>
       </span>
     </div>
