@@ -211,7 +211,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "旅行プラン"
+      "イベント",
+      "観光スポット"
     ]
   },
   {
@@ -252,7 +253,10 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "イベント",
+      "観光スポット"
+    ]
   },
   {
     "id": "18087824426261885",
@@ -1058,7 +1062,7 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -1484,7 +1488,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18058452425295968",
@@ -1986,7 +1992,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18043669444859556",
@@ -2028,7 +2036,7 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -2137,7 +2145,7 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "温泉"
+      "グルメ"
     ]
   },
   {
@@ -2256,7 +2264,7 @@
     "area": "函館近郊",
     "categories": [
       "お土産",
-      "イベント"
+      "グルメ"
     ]
   },
   {
@@ -2284,7 +2292,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "観光スポット"
+      "観光スポット",
+      "イベント"
     ]
   },
   {
@@ -2366,7 +2375,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18019615003995211",
@@ -3100,7 +3111,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "宿泊"
+      "宿泊",
+      "グルメ"
     ]
   },
   {
@@ -3239,7 +3251,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "イベント"
+      "イベント",
+      "観光スポット"
     ]
   },
   {
@@ -3252,7 +3265,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17975150663524970",
@@ -3264,7 +3279,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17891470595857217",
@@ -5426,7 +5443,7 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "旅行プラン"
+      "観光スポット"
     ]
   },
   {
@@ -5520,8 +5537,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "イベント",
-      "体験"
+      "体験",
+      "グルメ"
     ]
   },
   {
@@ -5678,7 +5695,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17858464805765713",
@@ -6015,7 +6034,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17842874597779979",
@@ -6067,7 +6088,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17940229466003807",
@@ -6079,7 +6102,9 @@
     "media_type": "VIDEO",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18164268622234598",
@@ -6116,7 +6141,8 @@
     "daichi": "道南",
     "area": "函館近郊",
     "categories": [
-      "観光スポット"
+      "観光スポット",
+      "イベント"
     ]
   },
   {
@@ -6129,7 +6155,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17961898693721692",
@@ -6231,7 +6259,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "観光スポット"
+    ]
   },
   {
     "id": "17934315407082737",
@@ -6397,7 +6427,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道南",
     "area": "函館近郊",
-    "categories": []
+    "categories": [
+      "観光スポット"
+    ]
   },
   {
     "id": "17883963377550777",
