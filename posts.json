@@ -556,7 +556,8 @@
     "area": "トマム",
     "categories": [
       "宿泊",
-      "観光スポット"
+      "観光スポット",
+      "体験"
     ]
   },
   {
@@ -571,7 +572,8 @@
     "area": "トマム",
     "categories": [
       "観光スポット",
-      "宿泊"
+      "宿泊",
+      "体験"
     ]
   },
   {
@@ -599,7 +601,8 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "体験"
+      "体験",
+      "宿泊"
     ]
   },
   {
@@ -627,7 +630,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "体験"
+      "体験",
+      "宿泊",
+      "観光スポット"
     ]
   },
   {
@@ -665,10 +670,10 @@
     "permalink": "https://www.instagram.com/reel/DSufUxQk0_G/",
     "timestamp": "2025-12-26T12:20:30+0000",
     "media_type": "VIDEO",
-    "daichi": "道央",
-    "area": "トマム",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
-      "旅行プラン"
+      "観光スポット"
     ]
   },
   {
@@ -1013,7 +1018,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "温泉"
+      "宿泊",
+      "観光スポット",
+      "体験"
     ]
   },
   {
@@ -1039,7 +1046,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "温泉"
+      "観光スポット",
+      "宿泊",
+      "体験"
     ]
   },
   {
@@ -1124,7 +1133,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "温泉"
+      "観光スポット",
+      "宿泊",
+      "体験"
     ]
   },
   {
@@ -1138,8 +1149,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "温泉",
-      "観光スポット"
+      "観光スポット",
+      "宿泊",
+      "体験"
     ]
   },
   {
@@ -1748,7 +1760,11 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "トマム",
-    "categories": []
+    "categories": [
+      "イベント",
+      "観光スポット",
+      "体験"
+    ]
   },
   {
     "id": "18020848130608056",
@@ -3290,8 +3306,8 @@
     "permalink": "https://www.instagram.com/p/CvHbQmorXKt/",
     "timestamp": "2023-07-25T09:53:52+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "トマム",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
       "観光スポット"
     ]
@@ -3364,7 +3380,11 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "トマム",
-    "categories": []
+    "categories": [
+      "観光スポット",
+      "宿泊",
+      "体験"
+    ]
   },
   {
     "id": "18090845371345678",
@@ -3390,7 +3410,11 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "トマム",
-    "categories": []
+    "categories": [
+      "観光スポット",
+      "宿泊",
+      "体験"
+    ]
   },
   {
     "id": "17985796562189109",
@@ -3524,7 +3548,11 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "トマム",
-    "categories": []
+    "categories": [
+      "観光スポット",
+      "宿泊",
+      "体験"
+    ]
   },
   {
     "id": "17911098062767346",
@@ -4219,7 +4247,11 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "トマム",
-    "categories": []
+    "categories": [
+      "観光スポット",
+      "宿泊",
+      "体験"
+    ]
   },
   {
     "id": "18180842218301027",
@@ -4355,7 +4387,9 @@
     "daichi": "道央",
     "area": "トマム",
     "categories": [
-      "体験"
+      "体験",
+      "観光スポット",
+      "宿泊"
     ]
   },
   {
