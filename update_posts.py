@@ -177,14 +177,17 @@ def detect_categories(caption):
     elif any(kw in body for kw in ['まつり', '祭り', '花火']):
         cats.append('イベント')
 
+    # グルメが確定しているかフラグ（後の除外ルールで使用）
+    is_grume = 'グルメ' in cats
+
     # ── 体験：具体的アクティビティ名のみ（本文チェック） ────────
-    # 「体験」「アクティビティ」は汎用すぎるため削除済み
-    if any(kw in body for kw in taiken_kw):
+    # グルメ投稿には付けない（飲食店はアクティビティではない）
+    if any(kw in body for kw in taiken_kw) and not is_grume:
         cats.append('体験')
 
     # ── 観光スポット：タイトルのみ ───────────────────────────
-    # 「絶景」「観光」等は本文・ハッシュタグに頻出するため本文検索は使わない
-    if any(kw in title for kw in spot_kw):
+    # グルメ投稿には付けない（飲食店は観光スポットではない）
+    if any(kw in title for kw in spot_kw) and not is_grume:
         cats.append('観光スポット')
 
     return cats
@@ -212,8 +215,25 @@ def fetch_instagram_posts():
     return all_posts
 
 def fetch_existing_posts():
-    """GitHub の現在の posts.json を id→post 辞書で返す"""
-    raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE}?t=nocache'
+    """GitHub の現在の posts.json を id→post 辞書で返す（常に最新データを取得）
+
+    GitHub Actions内では GITHUB_SHA 環境変数（トリガーコミットのSHA）を使用。
+    raw.githubusercontent.com/main/... はCDNキャッシュで古いデータを返す場合があるが、
+    /{commitSha}/... はSHA別にキャッシュされるため必ず正確な内容を返す。
+    """
+    # GitHub Actions 内で利用可能なトリガーコミットのSHA
+    github_sha = os.environ.get('GITHUB_SHA', '')
+    if github_sha:
+        raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{github_sha}/{GITHUB_FILE}'
+        print(f'コミットSHA指定でfetch: {github_sha[:8]}')
+    else:
+        # ローカル実行時：APIからSHAを取得してSHA指定URLを使用
+        sha = get_current_sha()
+        if sha:
+            raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{sha}/{GITHUB_FILE}'
+            print(f'APIからSHA取得してfetch: {sha[:8]}')
+        else:
+            raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE}'
     try:
         req = urllib.request.Request(raw_url)
         with urllib.request.urlopen(req) as resp:
@@ -226,7 +246,9 @@ def fetch_existing_posts():
         return {}
 
 def format_posts(raw_posts, existing_map):
-    """既存IDは手動設定を保持。新規IDのみ自動検出。"""
+    """既存IDはエリア・大エリア・カテゴリをすべて保持（手動更新を尊重）。
+    新規IDのみ自動検出。
+    """
     formatted = []
     new_count = 0
     for p in raw_posts:
@@ -235,14 +257,15 @@ def format_posts(raw_posts, existing_map):
         thumbnail = p.get('thumbnail_url') or p.get('media_url', '')
 
         if post_id in existing_map:
-            ex = existing_map[post_id]
+            # 既存投稿：手動設定をすべて保持
+            ex         = existing_map[post_id]
             area       = ex.get('area', '')
             daichi     = ex.get('daichi', '') or detect_daichi(area)
             categories = ex.get('categories', [])
         else:
+            # 新規投稿のみ自動検出
             area       = detect_area(caption)
             categories = detect_categories(caption)
-            # 旅行プランでエリア未確定の場合は北海道全体を自動設定
             if '旅行プラン' in categories and not area:
                 area = '北海道全体'
             daichi     = detect_daichi(area)
