@@ -97,9 +97,7 @@
     "daichi": "道央",
     "area": "ニセコ",
     "categories": [
-      "宿泊",
-      "温泉",
-      "観光スポット"
+      "宿泊"
     ]
   },
   {
@@ -267,9 +265,7 @@
     "daichi": "道央",
     "area": "ニセコ",
     "categories": [
-      "宿泊",
-      "温泉",
-      "体験"
+      "宿泊"
     ]
   },
   {
@@ -990,7 +986,7 @@
     "daichi": "道央",
     "area": "ニセコ",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -3352,7 +3348,7 @@
     "daichi": "道央",
     "area": "ニセコ",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -3939,8 +3935,8 @@
     "permalink": "https://www.instagram.com/p/CqFgHtRruci/",
     "timestamp": "2023-03-22T09:20:54+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "ニセコ",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
       "観光スポット"
     ]
