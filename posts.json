@@ -1979,7 +1979,7 @@
     "daichi": "道北",
     "area": "富良野・美瑛",
     "categories": [
-      "旅行プラン"
+      "観光スポット"
     ]
   },
   {
@@ -2350,7 +2350,7 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -2637,7 +2637,9 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18007174943512520",
@@ -2650,7 +2652,8 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "宿泊"
+      "宿泊",
+      "グルメ"
     ]
   },
   {
@@ -2703,7 +2706,9 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "18331475350097324",
@@ -3347,10 +3352,9 @@
     "permalink": "https://www.instagram.com/p/Cu9YyT1roGs/",
     "timestamp": "2023-07-21T12:19:51+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "小樽近郊",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
-      "イベント",
       "観光スポット"
     ]
   },
@@ -3589,7 +3593,9 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "観光スポット"
+    ]
   },
   {
     "id": "18258290215196601",
@@ -3884,8 +3890,8 @@
     "permalink": "https://www.instagram.com/p/CqiBKXjrWzE/",
     "timestamp": "2023-04-02T11:08:21+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "小樽近郊",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
       "観光スポット"
     ]
@@ -4416,7 +4422,8 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "温泉"
+      "温泉",
+      "宿泊"
     ]
   },
   {
@@ -4558,7 +4565,9 @@
     "media_type": "VIDEO",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "観光スポット"
+    ]
   },
   {
     "id": "17982990136712390",
@@ -5076,7 +5085,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道北",
     "area": "富良野・美瑛",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17852313446818841",
@@ -5100,10 +5111,10 @@
     "permalink": "https://www.instagram.com/p/CiFRB_yrYCx/",
     "timestamp": "2022-09-04T10:57:54+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "定山渓",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
-      "温泉"
+      "観光スポット"
     ]
   },
   {
@@ -5279,7 +5290,8 @@
     "daichi": "道北",
     "area": "富良野・美瑛",
     "categories": [
-      "温泉"
+      "観光スポット",
+      "グルメ"
     ]
   },
   {
@@ -5348,7 +5360,10 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道北",
     "area": "富良野・美瑛",
-    "categories": []
+    "categories": [
+      "グルメ",
+      "観光スポット"
+    ]
   },
   {
     "id": "17900531966572638",
@@ -5401,7 +5416,7 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -5497,7 +5512,7 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "旅行プラン"
+      "グルメ"
     ]
   },
   {
@@ -5577,7 +5592,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17868065588737442",
@@ -6116,7 +6133,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "小樽近郊",
-    "categories": []
+    "categories": [
+      "観光スポット"
+    ]
   },
   {
     "id": "17866873076705658",
