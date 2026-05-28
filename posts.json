@@ -8,7 +8,7 @@
     "timestamp": "2026-05-27T10:24:51+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -24,7 +24,7 @@
     "daichi": "道央",
     "area": "小樽近郊",
     "categories": [
-      "観光スポット"
+      "グルメ"
     ]
   },
   {
@@ -50,9 +50,10 @@
     "timestamp": "2026-05-16T00:50:37+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
-      "旅行プラン"
+      "観光スポット",
+      "イベント"
     ]
   },
   {
@@ -64,9 +65,10 @@
     "timestamp": "2026-05-15T10:22:24+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
-      "旅行プラン"
+      "観光スポット",
+      "イベント"
     ]
   },
   {
@@ -109,7 +111,7 @@
     "timestamp": "2026-05-09T12:08:00+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -123,7 +125,7 @@
     "timestamp": "2026-05-07T11:31:46+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -137,7 +139,7 @@
     "timestamp": "2026-05-03T09:28:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ",
       "イベント"
@@ -178,7 +180,7 @@
     "timestamp": "2026-04-30T09:40:02+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "お土産",
@@ -194,7 +196,7 @@
     "timestamp": "2026-04-29T09:28:40+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ",
       "お土産"
@@ -223,7 +225,7 @@
     "timestamp": "2026-04-28T08:56:32+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -237,7 +239,7 @@
     "timestamp": "2026-04-27T09:24:04+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -279,7 +281,7 @@
     "timestamp": "2026-04-23T10:00:26+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -293,7 +295,7 @@
     "timestamp": "2026-04-20T10:54:34+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -307,7 +309,7 @@
     "timestamp": "2026-04-18T09:49:21+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -321,7 +323,7 @@
     "timestamp": "2026-04-06T09:59:29+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -333,7 +335,7 @@
     "timestamp": "2026-04-02T09:56:51+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -345,7 +347,7 @@
     "timestamp": "2026-03-30T09:24:35+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "網走（オホーツク）",
+    "area": "網走（オホーツク周辺）",
     "categories": [
       "観光スポット"
     ]
@@ -359,7 +361,7 @@
     "timestamp": "2026-03-26T05:44:15+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -373,7 +375,7 @@
     "timestamp": "2026-03-24T10:03:05+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "体験"
     ]
@@ -387,7 +389,7 @@
     "timestamp": "2026-03-21T09:21:36+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "網走（オホーツク）",
+    "area": "網走（オホーツク周辺）",
     "categories": []
   },
   {
@@ -399,7 +401,7 @@
     "timestamp": "2026-03-19T07:07:29+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -411,7 +413,7 @@
     "timestamp": "2026-03-14T10:14:55+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -425,7 +427,7 @@
     "timestamp": "2026-03-12T09:20:21+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -453,7 +455,7 @@
     "timestamp": "2026-03-06T10:10:14+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -467,7 +469,7 @@
     "timestamp": "2026-03-04T08:06:04+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ",
       "お土産"
@@ -496,7 +498,7 @@
     "timestamp": "2026-02-28T09:58:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -508,7 +510,7 @@
     "timestamp": "2026-02-26T08:23:32+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -537,7 +539,7 @@
     "timestamp": "2026-02-12T10:15:50+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -581,7 +583,7 @@
     "timestamp": "2026-01-30T10:40:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -609,7 +611,7 @@
     "timestamp": "2026-01-24T10:55:37+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "網走（オホーツク）",
+    "area": "網走（オホーツク周辺）",
     "categories": [
       "旅行プラン"
     ]
@@ -678,7 +680,7 @@
     "timestamp": "2025-12-20T00:13:15+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -721,7 +723,7 @@
     "timestamp": "2025-12-12T12:06:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -747,7 +749,7 @@
     "timestamp": "2025-12-04T11:22:52+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -761,7 +763,7 @@
     "timestamp": "2025-12-03T13:25:07+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -773,7 +775,7 @@
     "timestamp": "2025-11-27T10:30:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -785,7 +787,7 @@
     "timestamp": "2025-11-25T10:15:41+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -799,7 +801,7 @@
     "timestamp": "2025-11-23T10:05:12+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -813,7 +815,7 @@
     "timestamp": "2025-11-22T11:48:58+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -827,7 +829,7 @@
     "timestamp": "2025-11-21T09:32:16+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -869,7 +871,7 @@
     "timestamp": "2025-11-18T11:32:06+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -883,7 +885,7 @@
     "timestamp": "2025-11-15T11:14:30+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "体験"
@@ -898,7 +900,7 @@
     "timestamp": "2025-11-14T11:37:48+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "お土産"
@@ -928,7 +930,7 @@
     "timestamp": "2025-10-31T12:04:07+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -940,7 +942,7 @@
     "timestamp": "2025-10-30T10:24:14+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -952,7 +954,7 @@
     "timestamp": "2025-10-12T09:28:46+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -967,7 +969,7 @@
     "timestamp": "2025-10-11T10:06:33+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -995,7 +997,7 @@
     "timestamp": "2025-09-02T09:15:10+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1023,7 +1025,7 @@
     "timestamp": "2025-08-24T08:58:20+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1077,7 +1079,7 @@
     "timestamp": "2025-08-08T08:57:50+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "体験"
@@ -1092,7 +1094,7 @@
     "timestamp": "2025-08-02T08:38:55+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "体験"
     ]
@@ -1106,7 +1108,7 @@
     "timestamp": "2025-07-30T10:41:32+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1149,7 +1151,7 @@
     "timestamp": "2025-07-20T08:32:58+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -1177,7 +1179,7 @@
     "timestamp": "2025-07-18T08:56:59+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "体験"
     ]
@@ -1191,7 +1193,7 @@
     "timestamp": "2025-07-17T09:00:00+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1203,7 +1205,7 @@
     "timestamp": "2025-07-16T10:22:15+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1217,7 +1219,7 @@
     "timestamp": "2025-07-11T10:15:56+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1231,7 +1233,7 @@
     "timestamp": "2025-07-02T09:12:01+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -1245,7 +1247,7 @@
     "timestamp": "2025-06-19T08:59:24+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -1260,7 +1262,7 @@
     "timestamp": "2025-06-17T09:30:10+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -1274,7 +1276,7 @@
     "timestamp": "2025-06-13T09:23:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -1288,7 +1290,7 @@
     "timestamp": "2025-06-11T10:43:21+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -1302,7 +1304,7 @@
     "timestamp": "2025-06-08T09:39:03+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1314,7 +1316,7 @@
     "timestamp": "2025-06-05T09:52:41+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -1342,7 +1344,7 @@
     "timestamp": "2025-05-27T10:01:18+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -1357,7 +1359,7 @@
     "timestamp": "2025-05-19T10:55:46+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1369,7 +1371,7 @@
     "timestamp": "2025-05-15T09:31:58+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1395,7 +1397,7 @@
     "timestamp": "2025-05-02T10:43:36+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1409,7 +1411,7 @@
     "timestamp": "2025-04-29T00:08:00+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1423,7 +1425,7 @@
     "timestamp": "2025-04-18T10:12:21+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1435,7 +1437,7 @@
     "timestamp": "2025-04-10T09:11:35+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1449,7 +1451,7 @@
     "timestamp": "2025-04-06T10:28:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1461,7 +1463,7 @@
     "timestamp": "2025-04-05T00:27:19+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1485,7 +1487,7 @@
     "timestamp": "2025-03-08T10:28:31+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1499,7 +1501,7 @@
     "timestamp": "2025-02-28T23:18:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1513,7 +1515,7 @@
     "timestamp": "2025-02-28T06:19:17+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -1527,7 +1529,7 @@
     "timestamp": "2025-02-04T11:39:38+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -1541,7 +1543,7 @@
     "timestamp": "2025-02-01T23:00:05+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -1555,7 +1557,7 @@
     "timestamp": "2025-01-28T11:35:04+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1567,7 +1569,7 @@
     "timestamp": "2025-01-26T10:22:03+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -1581,7 +1583,7 @@
     "timestamp": "2025-01-14T09:03:51+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -1595,7 +1597,7 @@
     "timestamp": "2025-01-04T08:56:41+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1609,7 +1611,7 @@
     "timestamp": "2024-12-17T09:02:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1621,7 +1623,7 @@
     "timestamp": "2024-12-10T09:07:01+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "網走（オホーツク）",
+    "area": "網走（オホーツク周辺）",
     "categories": [
       "グルメ"
     ]
@@ -1635,7 +1637,7 @@
     "timestamp": "2024-12-08T11:01:00+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1649,7 +1651,7 @@
     "timestamp": "2024-11-11T10:01:40+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "イベント",
@@ -1665,7 +1667,7 @@
     "timestamp": "2024-11-04T10:07:05+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1679,7 +1681,7 @@
     "timestamp": "2024-10-31T10:00:09+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "旅行プラン"
     ]
@@ -1693,7 +1695,7 @@
     "timestamp": "2024-10-30T12:09:06+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "観光スポット"
     ]
@@ -1707,7 +1709,7 @@
     "timestamp": "2024-10-29T11:23:16+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "根室近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -1719,7 +1721,7 @@
     "timestamp": "2024-10-28T11:05:05+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "根室近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -1731,7 +1733,7 @@
     "timestamp": "2024-10-27T11:07:09+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "根室近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "観光スポット"
     ]
@@ -1757,7 +1759,7 @@
     "timestamp": "2024-10-04T10:42:51+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1769,7 +1771,7 @@
     "timestamp": "2024-09-29T12:28:13+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1781,7 +1783,7 @@
     "timestamp": "2024-08-18T11:43:40+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1795,7 +1797,7 @@
     "timestamp": "2024-08-13T09:37:14+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -1807,7 +1809,7 @@
     "timestamp": "2024-08-10T11:44:28+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -1821,7 +1823,7 @@
     "timestamp": "2024-08-09T09:42:48+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1849,7 +1851,7 @@
     "timestamp": "2024-07-26T08:44:41+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1863,7 +1865,7 @@
     "timestamp": "2024-07-19T09:32:40+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1877,7 +1879,7 @@
     "timestamp": "2024-07-18T09:58:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -1891,7 +1893,7 @@
     "timestamp": "2024-07-17T11:13:16+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -1905,7 +1907,7 @@
     "timestamp": "2024-07-16T08:01:54+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊"
     ]
@@ -1919,7 +1921,7 @@
     "timestamp": "2024-07-14T12:26:35+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -1983,7 +1985,7 @@
     "timestamp": "2024-06-30T09:20:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -2026,7 +2028,7 @@
     "timestamp": "2024-06-18T11:04:50+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2040,7 +2042,7 @@
     "timestamp": "2024-06-17T10:37:01+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2081,7 +2083,7 @@
     "timestamp": "2024-05-23T10:20:56+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2095,7 +2097,7 @@
     "timestamp": "2024-05-17T09:20:13+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "旅行プラン"
     ]
@@ -2109,7 +2111,7 @@
     "timestamp": "2024-05-16T10:11:35+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -2135,7 +2137,7 @@
     "timestamp": "2024-05-11T12:12:30+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -2149,7 +2151,7 @@
     "timestamp": "2024-05-10T09:57:46+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2161,7 +2163,7 @@
     "timestamp": "2024-05-09T09:43:07+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2187,7 +2189,7 @@
     "timestamp": "2024-05-07T09:33:28+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -2199,7 +2201,7 @@
     "timestamp": "2024-05-06T01:39:08+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -2213,7 +2215,7 @@
     "timestamp": "2024-05-05T09:48:21+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -2225,7 +2227,7 @@
     "timestamp": "2024-05-04T09:07:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -2282,7 +2284,7 @@
     "timestamp": "2024-04-30T09:24:00+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "グルメ"
     ]
@@ -2296,7 +2298,7 @@
     "timestamp": "2024-04-29T09:28:43+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "宿泊",
       "体験"
@@ -2339,7 +2341,7 @@
     "timestamp": "2024-04-23T12:05:27+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -2363,7 +2365,7 @@
     "timestamp": "2024-04-19T11:24:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2375,7 +2377,7 @@
     "timestamp": "2024-04-17T11:17:52+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2389,7 +2391,7 @@
     "timestamp": "2024-04-04T10:08:45+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -2403,7 +2405,7 @@
     "timestamp": "2024-04-02T11:56:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -2417,7 +2419,7 @@
     "timestamp": "2024-03-31T10:28:31+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -2431,7 +2433,7 @@
     "timestamp": "2024-03-29T10:00:41+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -2445,7 +2447,7 @@
     "timestamp": "2024-03-27T09:32:10+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -2459,7 +2461,7 @@
     "timestamp": "2024-03-23T12:32:26+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -2487,7 +2489,7 @@
     "timestamp": "2024-03-21T09:33:22+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2513,7 +2515,7 @@
     "timestamp": "2024-03-19T09:08:36+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2527,7 +2529,7 @@
     "timestamp": "2024-02-17T10:41:55+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "旅行プラン"
     ]
@@ -2541,7 +2543,7 @@
     "timestamp": "2024-02-16T10:18:47+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "旅行プラン"
     ]
@@ -2555,7 +2557,7 @@
     "timestamp": "2024-02-08T12:12:37+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2569,7 +2571,7 @@
     "timestamp": "2024-02-06T10:41:38+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -2583,7 +2585,7 @@
     "timestamp": "2024-02-03T12:48:42+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -2597,7 +2599,7 @@
     "timestamp": "2024-02-03T11:24:21+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -2637,7 +2639,7 @@
     "timestamp": "2024-01-28T10:32:12+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -2651,7 +2653,7 @@
     "timestamp": "2024-01-22T08:27:19+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2663,7 +2665,7 @@
     "timestamp": "2024-01-19T12:26:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -2703,7 +2705,7 @@
     "timestamp": "2024-01-11T10:10:20+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "グルメ"
     ]
@@ -2717,7 +2719,7 @@
     "timestamp": "2024-01-09T12:39:19+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2731,7 +2733,7 @@
     "timestamp": "2024-01-07T12:51:11+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2745,7 +2747,7 @@
     "timestamp": "2024-01-05T11:43:41+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2759,7 +2761,7 @@
     "timestamp": "2024-01-03T12:02:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2783,7 +2785,7 @@
     "timestamp": "2023-12-30T11:03:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -2795,7 +2797,7 @@
     "timestamp": "2023-12-22T09:32:06+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -2809,7 +2811,7 @@
     "timestamp": "2023-12-20T09:33:23+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2823,7 +2825,7 @@
     "timestamp": "2023-12-08T11:22:33+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2837,7 +2839,7 @@
     "timestamp": "2023-12-06T09:54:14+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2851,7 +2853,7 @@
     "timestamp": "2023-12-03T10:14:34+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2865,7 +2867,7 @@
     "timestamp": "2023-11-24T08:56:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2977,7 +2979,7 @@
     "timestamp": "2023-11-07T09:48:59+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -2991,7 +2993,7 @@
     "timestamp": "2023-11-06T13:34:36+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -3005,7 +3007,7 @@
     "timestamp": "2023-11-04T10:18:47+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3019,7 +3021,7 @@
     "timestamp": "2023-10-28T08:27:33+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3033,7 +3035,7 @@
     "timestamp": "2023-10-26T09:58:24+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3045,7 +3047,7 @@
     "timestamp": "2023-10-18T10:55:59+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "観光スポット"
@@ -3072,7 +3074,7 @@
     "timestamp": "2023-10-11T11:36:06+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3098,7 +3100,7 @@
     "timestamp": "2023-10-01T09:27:04+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -3112,7 +3114,7 @@
     "timestamp": "2023-09-29T10:21:21+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3126,7 +3128,7 @@
     "timestamp": "2023-09-22T12:13:52+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3140,7 +3142,7 @@
     "timestamp": "2023-09-16T11:25:30+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3154,7 +3156,7 @@
     "timestamp": "2023-09-12T11:22:30+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3168,7 +3170,7 @@
     "timestamp": "2023-09-09T11:30:16+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3182,7 +3184,7 @@
     "timestamp": "2023-09-08T12:11:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3261,7 +3263,7 @@
     "timestamp": "2023-08-03T12:37:25+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3275,7 +3277,7 @@
     "timestamp": "2023-07-27T12:05:09+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3303,7 +3305,7 @@
     "timestamp": "2023-07-24T12:00:24+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3346,7 +3348,7 @@
     "timestamp": "2023-07-16T13:13:34+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -3373,7 +3375,7 @@
     "timestamp": "2023-07-12T13:36:36+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -3399,7 +3401,7 @@
     "timestamp": "2023-07-08T11:44:59+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3411,7 +3413,7 @@
     "timestamp": "2023-07-07T09:21:06+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3425,7 +3427,7 @@
     "timestamp": "2023-07-04T10:43:27+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3439,7 +3441,7 @@
     "timestamp": "2023-07-03T09:46:15+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3451,7 +3453,7 @@
     "timestamp": "2023-06-30T12:56:53+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊"
     ]
@@ -3479,7 +3481,7 @@
     "timestamp": "2023-06-27T09:57:56+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3493,7 +3495,7 @@
     "timestamp": "2023-06-22T13:11:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3533,7 +3535,7 @@
     "timestamp": "2023-06-01T11:40:55+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3557,7 +3559,7 @@
     "timestamp": "2023-05-28T08:21:05+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3571,7 +3573,7 @@
     "timestamp": "2023-05-27T13:01:42+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3585,7 +3587,7 @@
     "timestamp": "2023-05-26T11:12:53+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -3613,7 +3615,7 @@
     "timestamp": "2023-05-18T13:57:17+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊"
     ]
@@ -3695,7 +3697,7 @@
     "timestamp": "2023-04-19T11:24:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3721,7 +3723,7 @@
     "timestamp": "2023-04-16T10:21:36+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3735,7 +3737,7 @@
     "timestamp": "2023-04-12T11:52:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3830,7 +3832,7 @@
     "timestamp": "2023-04-04T11:38:38+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3856,7 +3858,7 @@
     "timestamp": "2023-03-31T10:41:50+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3870,7 +3872,7 @@
     "timestamp": "2023-03-30T10:09:36+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3884,7 +3886,7 @@
     "timestamp": "2023-03-27T10:44:19+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3898,7 +3900,7 @@
     "timestamp": "2023-03-26T11:16:43+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -3924,7 +3926,7 @@
     "timestamp": "2023-03-20T10:55:06+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3952,7 +3954,7 @@
     "timestamp": "2023-03-18T10:30:29+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -3967,7 +3969,7 @@
     "timestamp": "2023-03-16T10:07:52+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -3981,7 +3983,7 @@
     "timestamp": "2023-03-13T10:01:18+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -3995,7 +3997,7 @@
     "timestamp": "2023-03-09T09:42:06+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4009,7 +4011,7 @@
     "timestamp": "2023-03-06T09:25:51+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4037,7 +4039,7 @@
     "timestamp": "2023-03-04T07:22:08+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "網走（オホーツク）",
+    "area": "網走（オホーツク周辺）",
     "categories": [
       "グルメ"
     ]
@@ -4051,7 +4053,7 @@
     "timestamp": "2023-03-03T09:26:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -4065,7 +4067,7 @@
     "timestamp": "2023-03-01T10:52:18+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4077,7 +4079,7 @@
     "timestamp": "2023-02-28T10:10:48+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4091,7 +4093,7 @@
     "timestamp": "2023-02-26T10:30:16+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4105,7 +4107,7 @@
     "timestamp": "2023-02-25T08:00:29+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "グルメ"
@@ -4120,7 +4122,7 @@
     "timestamp": "2023-02-24T11:36:54+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4134,7 +4136,7 @@
     "timestamp": "2023-02-23T11:10:45+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4161,7 +4163,7 @@
     "timestamp": "2023-02-17T11:06:24+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "宿泊",
       "温泉"
@@ -4190,7 +4192,7 @@
     "timestamp": "2023-02-15T12:21:54+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -4228,7 +4230,7 @@
     "timestamp": "2023-02-09T12:30:55+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "観光スポット"
     ]
@@ -4254,7 +4256,7 @@
     "timestamp": "2023-02-05T12:57:16+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -4294,7 +4296,7 @@
     "timestamp": "2023-02-02T10:42:28+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4308,7 +4310,7 @@
     "timestamp": "2023-01-30T09:28:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4322,7 +4324,7 @@
     "timestamp": "2023-01-27T11:38:45+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4336,7 +4338,7 @@
     "timestamp": "2023-01-25T11:17:25+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -4379,7 +4381,7 @@
     "timestamp": "2023-01-19T09:50:23+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4391,7 +4393,7 @@
     "timestamp": "2023-01-16T10:32:56+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4403,7 +4405,7 @@
     "timestamp": "2023-01-15T10:27:46+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4417,7 +4419,7 @@
     "timestamp": "2023-01-14T10:49:33+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4431,7 +4433,7 @@
     "timestamp": "2023-01-11T09:14:12+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4443,7 +4445,7 @@
     "timestamp": "2023-01-10T09:02:40+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4455,7 +4457,7 @@
     "timestamp": "2023-01-09T09:58:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4467,7 +4469,7 @@
     "timestamp": "2023-01-06T10:49:33+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4479,7 +4481,7 @@
     "timestamp": "2023-01-05T09:23:59+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "イベント"
@@ -4494,7 +4496,7 @@
     "timestamp": "2022-12-31T06:21:16+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4520,7 +4522,7 @@
     "timestamp": "2022-12-27T10:04:03+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4534,7 +4536,7 @@
     "timestamp": "2022-12-26T08:49:06+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4548,7 +4550,7 @@
     "timestamp": "2022-12-23T10:47:56+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4578,7 +4580,7 @@
     "timestamp": "2022-12-21T08:28:16+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4592,7 +4594,7 @@
     "timestamp": "2022-12-20T09:50:30+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4606,7 +4608,7 @@
     "timestamp": "2022-12-19T10:36:21+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4618,7 +4620,7 @@
     "timestamp": "2022-12-19T09:42:56+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4630,7 +4632,7 @@
     "timestamp": "2022-12-17T09:53:03+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -4644,7 +4646,7 @@
     "timestamp": "2022-12-15T12:22:34+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4658,7 +4660,7 @@
     "timestamp": "2022-12-13T14:01:52+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4672,7 +4674,7 @@
     "timestamp": "2022-12-12T12:38:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4684,7 +4686,7 @@
     "timestamp": "2022-12-11T08:42:15+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4698,7 +4700,7 @@
     "timestamp": "2022-12-10T09:26:20+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4712,7 +4714,7 @@
     "timestamp": "2022-12-09T13:01:22+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4726,7 +4728,7 @@
     "timestamp": "2022-12-08T06:53:01+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4740,7 +4742,7 @@
     "timestamp": "2022-12-02T10:04:04+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4754,7 +4756,7 @@
     "timestamp": "2022-11-29T12:56:47+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4768,7 +4770,7 @@
     "timestamp": "2022-11-28T10:47:48+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4780,7 +4782,7 @@
     "timestamp": "2022-11-27T08:52:42+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4794,7 +4796,7 @@
     "timestamp": "2022-11-26T11:14:41+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4808,7 +4810,7 @@
     "timestamp": "2022-11-25T09:36:59+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4822,7 +4824,7 @@
     "timestamp": "2022-11-23T09:12:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -4836,7 +4838,7 @@
     "timestamp": "2022-11-22T09:21:43+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4850,7 +4852,7 @@
     "timestamp": "2022-11-20T09:54:06+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4862,7 +4864,7 @@
     "timestamp": "2022-11-18T13:29:59+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4874,7 +4876,7 @@
     "timestamp": "2022-11-14T10:09:25+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -4886,7 +4888,7 @@
     "timestamp": "2022-11-11T14:29:03+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4900,7 +4902,7 @@
     "timestamp": "2022-11-10T10:43:54+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4928,7 +4930,7 @@
     "timestamp": "2022-11-06T09:59:27+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -4956,7 +4958,7 @@
     "timestamp": "2022-11-03T10:17:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "観光スポット"
     ]
@@ -4970,7 +4972,7 @@
     "timestamp": "2022-10-27T13:54:49+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4984,7 +4986,7 @@
     "timestamp": "2022-10-07T12:10:46+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -4998,7 +5000,7 @@
     "timestamp": "2022-09-11T10:08:50+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5038,7 +5040,7 @@
     "timestamp": "2022-09-05T08:22:50+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5066,7 +5068,7 @@
     "timestamp": "2022-09-02T09:42:56+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5080,7 +5082,7 @@
     "timestamp": "2022-09-01T07:37:38+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5094,7 +5096,7 @@
     "timestamp": "2022-08-31T11:27:26+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5108,7 +5110,7 @@
     "timestamp": "2022-08-29T12:51:36+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5122,7 +5124,7 @@
     "timestamp": "2022-08-28T12:36:00+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5134,7 +5136,7 @@
     "timestamp": "2022-08-26T12:51:06+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊"
     ]
@@ -5148,7 +5150,7 @@
     "timestamp": "2022-08-25T12:32:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5162,7 +5164,7 @@
     "timestamp": "2022-08-24T14:26:20+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5174,7 +5176,7 @@
     "timestamp": "2022-08-23T10:24:10+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5188,7 +5190,7 @@
     "timestamp": "2022-08-20T08:42:42+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5200,7 +5202,7 @@
     "timestamp": "2022-08-18T10:55:08+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5214,7 +5216,7 @@
     "timestamp": "2022-08-17T10:20:59+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5242,7 +5244,7 @@
     "timestamp": "2022-08-13T11:11:34+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5256,7 +5258,7 @@
     "timestamp": "2022-08-12T11:52:37+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5270,7 +5272,7 @@
     "timestamp": "2022-08-11T10:24:54+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5284,7 +5286,7 @@
     "timestamp": "2022-08-08T09:18:43+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5324,7 +5326,7 @@
     "timestamp": "2022-08-05T13:05:37+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5338,7 +5340,7 @@
     "timestamp": "2022-08-04T13:08:22+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5378,7 +5380,7 @@
     "timestamp": "2022-07-31T11:46:50+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5406,7 +5408,7 @@
     "timestamp": "2022-07-27T12:26:22+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5420,7 +5422,7 @@
     "timestamp": "2022-07-25T11:43:45+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5432,7 +5434,7 @@
     "timestamp": "2022-07-24T11:22:48+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5460,7 +5462,7 @@
     "timestamp": "2022-07-17T12:31:57+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5474,7 +5476,7 @@
     "timestamp": "2022-07-15T13:14:08+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5501,7 +5503,7 @@
     "timestamp": "2022-07-13T09:44:42+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5539,7 +5541,7 @@
     "timestamp": "2022-07-08T09:44:45+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5567,7 +5569,7 @@
     "timestamp": "2022-07-05T12:02:51+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -5581,7 +5583,7 @@
     "timestamp": "2022-07-03T11:35:01+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5593,7 +5595,7 @@
     "timestamp": "2022-07-02T09:33:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5607,7 +5609,7 @@
     "timestamp": "2022-06-30T11:57:31+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5619,7 +5621,7 @@
     "timestamp": "2022-06-28T12:02:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5633,7 +5635,7 @@
     "timestamp": "2022-06-27T08:26:01+0000",
     "media_type": "VIDEO",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": []
   },
   {
@@ -5657,7 +5659,7 @@
     "timestamp": "2022-06-24T09:28:16+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -5671,7 +5673,7 @@
     "timestamp": "2022-06-23T12:09:11+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5683,7 +5685,7 @@
     "timestamp": "2022-06-22T12:49:40+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -5697,7 +5699,7 @@
     "timestamp": "2022-06-21T09:09:44+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5709,7 +5711,7 @@
     "timestamp": "2022-06-20T09:19:14+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "知床",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "グルメ"
     ]
@@ -5737,7 +5739,7 @@
     "timestamp": "2022-06-16T09:56:25+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ",
       "イベント"
@@ -5752,7 +5754,7 @@
     "timestamp": "2022-06-12T10:36:43+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5766,7 +5768,7 @@
     "timestamp": "2022-06-10T08:26:58+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5778,7 +5780,7 @@
     "timestamp": "2022-06-08T10:20:15+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道東",
-    "area": "釧路近郊",
+    "area": "釧路/根室/知床周辺",
     "categories": [
       "温泉",
       "グルメ"
@@ -5793,7 +5795,7 @@
     "timestamp": "2022-06-06T09:43:51+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -5807,7 +5809,7 @@
     "timestamp": "2022-06-03T10:00:38+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -5821,7 +5823,7 @@
     "timestamp": "2022-06-01T12:25:33+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5833,7 +5835,7 @@
     "timestamp": "2022-05-30T09:57:23+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5845,7 +5847,7 @@
     "timestamp": "2022-05-28T12:04:36+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "観光スポット"
@@ -5860,7 +5862,7 @@
     "timestamp": "2022-05-26T11:00:05+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5874,7 +5876,7 @@
     "timestamp": "2022-05-24T11:03:23+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -5888,7 +5890,7 @@
     "timestamp": "2022-05-22T08:28:08+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -5902,7 +5904,7 @@
     "timestamp": "2022-05-17T10:05:30+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -5916,7 +5918,7 @@
     "timestamp": "2022-05-14T10:29:21+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5942,7 +5944,7 @@
     "timestamp": "2022-05-11T09:05:24+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -5970,7 +5972,7 @@
     "timestamp": "2022-05-08T09:53:56+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -5994,7 +5996,7 @@
     "timestamp": "2022-05-06T10:52:14+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -6008,7 +6010,7 @@
     "timestamp": "2022-05-05T12:14:24+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6020,7 +6022,7 @@
     "timestamp": "2022-05-04T10:40:52+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "イベント"
     ]
@@ -6070,7 +6072,7 @@
     "timestamp": "2022-04-28T10:09:31+0000",
     "media_type": "VIDEO",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6122,7 +6124,7 @@
     "timestamp": "2022-04-21T11:05:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6134,7 +6136,7 @@
     "timestamp": "2022-04-19T09:20:19+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6146,7 +6148,7 @@
     "timestamp": "2022-04-16T10:13:42+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6184,7 +6186,7 @@
     "timestamp": "2022-04-08T10:40:15+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6210,7 +6212,7 @@
     "timestamp": "2022-04-02T10:24:19+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6222,7 +6224,7 @@
     "timestamp": "2022-03-31T09:20:45+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6234,7 +6236,7 @@
     "timestamp": "2022-03-29T09:49:00+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6246,7 +6248,7 @@
     "timestamp": "2022-03-27T10:02:31+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -6260,7 +6262,7 @@
     "timestamp": "2022-03-24T09:57:50+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6272,7 +6274,7 @@
     "timestamp": "2022-03-22T11:07:32+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "観光スポット"
     ]
@@ -6286,7 +6288,7 @@
     "timestamp": "2022-03-20T09:23:49+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6298,7 +6300,7 @@
     "timestamp": "2022-03-17T11:14:20+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6310,7 +6312,7 @@
     "timestamp": "2022-03-15T09:36:26+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6324,7 +6326,7 @@
     "timestamp": "2022-03-13T11:58:36+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -6338,7 +6340,7 @@
     "timestamp": "2022-03-08T10:00:14+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6350,7 +6352,7 @@
     "timestamp": "2022-03-06T12:05:40+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -6376,7 +6378,7 @@
     "timestamp": "2022-02-27T12:14:12+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "宿泊",
       "温泉"
@@ -6391,7 +6393,7 @@
     "timestamp": "2022-02-25T12:28:38+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6403,7 +6405,7 @@
     "timestamp": "2022-02-20T12:37:21+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6415,7 +6417,7 @@
     "timestamp": "2022-02-20T12:03:58+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -6429,7 +6431,7 @@
     "timestamp": "2022-02-17T12:27:39+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "イベント",
@@ -6445,7 +6447,7 @@
     "timestamp": "2022-02-15T12:34:48+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6457,7 +6459,7 @@
     "timestamp": "2022-02-10T12:07:54+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉"
     ]
@@ -6471,7 +6473,7 @@
     "timestamp": "2022-02-08T10:11:44+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "お土産"
     ]
@@ -6485,7 +6487,7 @@
     "timestamp": "2022-02-06T09:37:35+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "温泉",
       "イベント"
@@ -6500,7 +6502,7 @@
     "timestamp": "2022-02-03T11:53:03+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6514,7 +6516,7 @@
     "timestamp": "2022-02-01T09:47:32+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "グルメ"
     ]
@@ -6528,7 +6530,7 @@
     "timestamp": "2022-01-22T09:39:08+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6540,7 +6542,7 @@
     "timestamp": "2022-01-14T09:42:23+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6554,7 +6556,7 @@
     "timestamp": "2022-01-09T09:43:15+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "体験"
     ]
@@ -6568,7 +6570,7 @@
     "timestamp": "2022-01-05T10:36:55+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6582,7 +6584,7 @@
     "timestamp": "2022-01-02T09:56:19+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6596,7 +6598,7 @@
     "timestamp": "2021-12-28T10:18:43+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6610,7 +6612,7 @@
     "timestamp": "2021-12-19T09:01:48+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
@@ -6624,7 +6626,7 @@
     "timestamp": "2021-12-17T09:24:58+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": []
   },
   {
@@ -6636,7 +6638,7 @@
     "timestamp": "2021-12-15T09:18:02+0000",
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
-    "area": "札幌近郊（千歳等）",
+    "area": "札幌近郊(札幌以外)",
     "categories": [
       "旅行プラン"
     ]
