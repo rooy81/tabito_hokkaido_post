@@ -313,6 +313,40 @@
     .card-footer { display: flex; align-items: center; justify-content: space-between; }
     .card-date { font-size: 0.7rem; color: #999; }
 
+    /* ── SEARCH ── */
+    .search-wrap { padding: 8px 0 10px; }
+    .search-box {
+      display: flex; align-items: center; gap: 8px;
+      background: #fff; border: 1.5px solid #c5d0c5; border-radius: 100px;
+      padding: 7px 16px; transition: border-color var(--transition);
+    }
+    .search-box:focus-within { border-color: var(--dark); }
+    .search-box svg { width: 15px; height: 15px; color: #8a9a8a; flex-shrink: 0; }
+    .search-box input {
+      border: none; outline: none; background: transparent;
+      font-family: 'Noto Sans JP', sans-serif; font-size: 0.85rem;
+      color: var(--dark); width: 100%; min-width: 0;
+    }
+    .search-box input::placeholder { color: #aab8aa; }
+    .search-clear {
+      background: none; border: none; cursor: pointer;
+      color: #8a9a8a; padding: 0; line-height: 1; flex-shrink: 0;
+      display: none; font-size: 1rem;
+    }
+
+    /* ── LOAD MORE ── */
+    .load-more-wrap { grid-column: 1/-1; text-align: center; padding: 32px 0 8px; }
+    .load-more-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 32px; border-radius: 100px;
+      border: 1.5px solid var(--dark); background: #fff;
+      color: var(--dark); font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.85rem; font-weight: 600; cursor: pointer;
+      transition: all var(--transition);
+    }
+    .load-more-btn:hover { background: var(--dark); color: var(--main); }
+    .load-more-btn svg { width: 14px; height: 14px; }
+
     /* ── LOADING ── */
     .loading { grid-column: 1/-1; text-align: center; padding: 72px 24px; color: var(--gray); }
     .loading-spinner {
@@ -406,6 +440,13 @@
   <div class="area-tabs" id="daichiTabs"></div>
   <div class="area-tabs" id="areaTabs" style="padding-top:2px;"></div>
   <div class="cat-chips" id="catChips"></div>
+  <div class="search-wrap">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="searchInput" placeholder="キーワードで検索…" autocomplete="off">
+      <button class="search-clear" id="searchClear" onclick="clearSearch()" title="クリア">✕</button>
+    </div>
+  </div>
 </div>
 
 <!-- ── GALLERY ── -->
@@ -465,10 +506,32 @@
 </footer>
 
 <script>
-let allPosts = [];
+const PAGE_SIZE = 20;
+
+let allPosts    = [];
 let activeDaichi = 'すべて';
 let activeArea   = 'すべて';
 let activeCats   = new Set();
+let searchQuery  = '';
+let shownCount   = PAGE_SIZE;   // 現在表示中の件数上限
+
+// ── エリア並び順（人口順） ──
+const DAICHI_ORDER = ['道央','道南','道東','道北'];
+const AREA_ORDER = {
+  '道央': ['札幌','札幌近郊(札幌以外)','小樽近郊','新千歳','定山渓','ニセコ','登別/白老/洞爺湖/苫小牧方面','トマム','日高'],
+  '道南': ['函館近郊'],
+  '道東': ['帯広近郊（十勝）','釧路/根室/知床周辺','網走（オホーツク周辺）'],
+  '道北': ['旭川近郊','富良野・美瑛','稚内（道北）'],
+};
+const DAICHI_MAP_JS = {
+  '道央': ['札幌','札幌近郊(札幌以外)','新千歳','定山渓','小樽近郊','ニセコ','登別/白老/洞爺湖/苫小牧方面','トマム','日高'],
+  '道東': ['帯広近郊（十勝）','釧路/根室/知床周辺','網走（オホーツク周辺）'],
+  '道南': ['函館近郊'],
+  '道北': ['旭川近郊','富良野・美瑛','稚内（道北）'],
+};
+function isAreaInDaichi(area, daichi) {
+  return (DAICHI_MAP_JS[daichi] || []).includes(area);
+}
 
 async function loadPosts() {
   try {
@@ -486,22 +549,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   buildDaichiTabs(daichis);
   buildAreaTabs(areas);
   buildCatChips(cats);
+  initSearch();
   renderGallery();
 });
 
-const DAICHI_MAP_JS = {
-  '道央': ['札幌','札幌近郊(札幌以外)','新千歳','定山渓','小樽近郊','ニセコ','登別/白老/洞爺湖/苫小牧方面','トマム','日高'],
-  '道東': ['帯広近郊（十勝）','釧路/根室/知床周辺','網走（オホーツク周辺）'],
-  '道南': ['函館近郊'],
-  '道北': ['旭川近郊','富良野・美瑛','稚内（道北）'],
-};
-function isAreaInDaichi(area, daichi) {
-  return (DAICHI_MAP_JS[daichi] || []).includes(area);
-}
-
+// ── 大エリアタブ ──
 function buildDaichiTabs(daichis) {
   const wrap = document.getElementById('daichiTabs');
-  const ordered = ['道央','道東','道南','道北'].filter(d => daichis.includes(d));
+  const ordered = DAICHI_ORDER.filter(d => daichis.includes(d));
   ['すべて', ...ordered].forEach(d => {
     const btn = document.createElement('button');
     btn.className = 'area-btn' + (d === 'すべて' ? ' active' : '');
@@ -510,49 +565,97 @@ function buildDaichiTabs(daichis) {
       activeDaichi = d; activeArea = 'すべて';
       document.querySelectorAll('#daichiTabs .area-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('#areaTabs .area-btn').forEach(b => {
-        const show = d === 'すべて' || isAreaInDaichi(b.textContent, d) || b.textContent === 'すべて';
+        const show = d === 'すべて' || isAreaInDaichi(b.dataset.area, d) || b.dataset.area === 'すべて';
         b.style.display = show ? '' : 'none';
-        b.classList.toggle('active', b.textContent === 'すべて');
+        b.classList.toggle('active', b.dataset.area === 'すべて');
       });
       btn.classList.add('active');
-      renderGallery();
+      resetAndRender();
     };
     wrap.appendChild(btn);
   });
 }
 
+// ── エリアタブ（人口順ソート） ──
 function buildAreaTabs(areas) {
   const wrap = document.getElementById('areaTabs');
-  const areasWithOther = [...areas.filter(a => a !== 'その他'), 'その他'];
-  ['すべて', ...areasWithOther].forEach(area => {
+
+  // 全AREA_ORDERの順番でソート。リストにないエリアは末尾に
+  const allOrdered = DAICHI_ORDER.flatMap(d => AREA_ORDER[d] || []);
+  const sorted = [
+    ...allOrdered.filter(a => areas.includes(a)),
+    ...areas.filter(a => !allOrdered.includes(a) && a !== 'その他'),
+    ...(areas.includes('その他') ? ['その他'] : []),
+  ];
+
+  ['すべて', ...sorted].forEach(area => {
     const btn = document.createElement('button');
     btn.className = 'area-btn' + (area === 'すべて' ? ' active' : '');
     btn.textContent = area;
+    btn.dataset.area = area;
     btn.onclick = () => {
       activeArea = area;
       document.querySelectorAll('#areaTabs .area-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      renderGallery();
+      resetAndRender();
     };
     wrap.appendChild(btn);
   });
 }
 
+// ── カテゴリチップ ──
+const CAT_ORDER = ['グルメ','観光スポット','宿泊','体験','温泉','イベント','旅行プラン','お土産'];
 function buildCatChips(cats) {
   const wrap = document.getElementById('catChips');
-  cats.forEach(cat => {
+  const sorted = [...CAT_ORDER.filter(c => cats.includes(c)), ...cats.filter(c => !CAT_ORDER.includes(c))];
+  sorted.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'cat-btn';
     btn.textContent = cat;
     btn.onclick = () => {
       if (activeCats.has(cat)) { activeCats.delete(cat); btn.classList.remove('active'); }
       else { activeCats.add(cat); btn.classList.add('active'); }
-      renderGallery();
+      resetAndRender();
     };
     wrap.appendChild(btn);
   });
 }
 
+// ── 検索 ──
+function initSearch() {
+  const input = document.getElementById('searchInput');
+  const clear = document.getElementById('searchClear');
+  input.addEventListener('input', () => {
+    searchQuery = input.value.trim().toLowerCase();
+    clear.style.display = searchQuery ? 'block' : 'none';
+    resetAndRender();
+  });
+}
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchClear').style.display = 'none';
+  searchQuery = '';
+  resetAndRender();
+}
+
+// ── フィルター変更時はページをリセット ──
+function resetAndRender() {
+  shownCount = PAGE_SIZE;
+  renderGallery();
+}
+
+// ── フィルタリング ──
+function getFiltered() {
+  return allPosts.filter(p => {
+    const daichiOk = activeDaichi === 'すべて' || p.daichi === activeDaichi;
+    const areaOk   = activeArea   === 'すべて' || p.area   === activeArea;
+    const catOk    = activeCats.size === 0 || (p.categories || []).some(c => activeCats.has(c));
+    const searchOk = !searchQuery || (p.caption || '').toLowerCase().includes(searchQuery);
+    return daichiOk && areaOk && catOk && searchOk;
+  });
+}
+
+// ── ギャラリー描画 ──
 function renderGallery() {
   const gallery = document.getElementById('gallery');
   gallery.innerHTML = '';
@@ -563,27 +666,24 @@ function renderGallery() {
     return;
   }
 
-  const filtered = allPosts.filter(p => {
-    const daichiOk = activeDaichi === 'すべて' || p.daichi === activeDaichi;
-    const areaOk   = activeArea   === 'すべて' || p.area   === activeArea;
-    const catOk    = activeCats.size === 0 || (p.categories || []).some(c => activeCats.has(c));
-    return daichiOk && areaOk && catOk;
-  });
+  const filtered = getFiltered();
+  const total    = filtered.length;
+  const visible  = filtered.slice(0, shownCount);
 
-  document.getElementById('visibleCount').textContent = filtered.length;
+  document.getElementById('visibleCount').textContent = total;
 
-  if (filtered.length === 0) {
+  if (total === 0) {
     gallery.innerHTML = `<div class="no-results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><p>条件に合う投稿が見つかりませんでした。</p></div>`;
     return;
   }
 
-  filtered.forEach((post, i) => {
+  visible.forEach((post, i) => {
     const card = document.createElement('a');
     card.className = 'card';
     card.href = post.permalink || '#';
     card.target = '_blank';
     card.rel = 'noopener';
-    card.style.animationDelay = `${Math.min(i, 20) * 50}ms`;
+    card.style.animationDelay = `${Math.min(i, 20) * 40}ms`;
     const cats   = post.categories || [];
     const imgSrc = post.thumbnail_url || post.media_url || '';
     card.innerHTML = `
@@ -604,6 +704,30 @@ function renderGallery() {
       </div>`;
     gallery.appendChild(card);
   });
+
+  // もっと見るボタン
+  if (shownCount < total) {
+    const remaining = total - shownCount;
+    const wrap = document.createElement('div');
+    wrap.className = 'load-more-wrap';
+    wrap.innerHTML = `
+      <button class="load-more-btn" onclick="loadMore()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        もっと見る（残り ${remaining} 件）
+      </button>`;
+    gallery.appendChild(wrap);
+  }
+}
+
+function loadMore() {
+  shownCount += PAGE_SIZE;
+  renderGallery();
+  // 新しいカードが追加された位置にスクロール
+  const cards = document.querySelectorAll('.card');
+  if (cards.length > 0) {
+    const newStart = cards[Math.max(0, cards.length - PAGE_SIZE)];
+    newStart.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 }
 
 function formatDate(dateStr) {
