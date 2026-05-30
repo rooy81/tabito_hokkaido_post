@@ -345,7 +345,7 @@ const GITHUB_REPO = 'rooy81/tabito_hokkaido_post';
 const HOTELS_FILE = 'hotels.json';
 let allHotels = [];
 
-async function loadHotels() {
+async function loadHotels() {   try {     const url = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${HOTELS_FILE}?t=${Date.now()}`;     const res = await fetch(url);     if (!res.ok) throw new Error('not found');     allHotels = await res.json();   } catch(e) { allHotels = []; }    await Promise.all(allHotels.map(async h => {     if (!h.tiktok_url) return;     try {       const r = await fetch(`https://www.tiktok.com/oembed?url=${encodeURIComponent(h.tiktok_url)}`);       const d = await r.json();       if (d.thumbnail_url) h.thumbnail_url = d.thumbnail_url;     } catch(e) {}   }));    buildFilters();   renderCards(allHotels); }
   try {
     const url = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${HOTELS_FILE}?t=${Date.now()}`;
     const res = await fetch(url);
