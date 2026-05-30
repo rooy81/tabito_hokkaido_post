@@ -313,6 +313,12 @@
     .card-footer { display: flex; align-items: center; justify-content: space-between; }
     .card-date { font-size: 0.7rem; color: #999; }
 
+    /* ── FILTER LABELS ── */
+    .filter-label {
+      font-size: 0.68rem; color: #8a9a8a; font-weight: 600;
+      letter-spacing: 0.08em; padding: 8px 0 2px;
+    }
+
     /* ── SEARCH ── */
     .search-wrap { padding: 8px 0 10px; }
     .search-box {
@@ -437,13 +443,16 @@
 
 <!-- ── FILTERS ── -->
 <div class="filters-wrap">
+  <div class="filter-label">方面で選ぶ</div>
   <div class="area-tabs" id="daichiTabs"></div>
+  <div class="filter-label" style="margin-top:4px;">エリアで選ぶ</div>
   <div class="area-tabs" id="areaTabs" style="padding-top:2px;"></div>
+  <div class="filter-label" style="margin-top:4px;">カテゴリで選ぶ</div>
   <div class="cat-chips" id="catChips"></div>
   <div class="search-wrap">
     <div class="search-box">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="search" id="searchInput" placeholder="キーワードで検索…" autocomplete="off">
+      <input type="search" id="searchInput" placeholder="キーワードで検索：例）札幌、ラーメン、海鮮丼..." autocomplete="off">
       <button class="search-clear" id="searchClear" onclick="clearSearch()" title="クリア">✕</button>
     </div>
   </div>
@@ -472,7 +481,7 @@
     <div class="hotel-banner-left">
       <span class="hotel-banner-eyebrow">Roy's Pick</span>
       <p class="hotel-banner-title">実際に泊まった<br>おすすめの宿</p>
-      <p class="hotel-banner-sub">TikTokで紹介した厳選宿をまとめました</p>
+      <p class="hotel-banner-sub">TikTokから予約するとお得な特典あり！</p>
     </div>
     <div class="hotel-banner-right">
       <span class="hotel-banner-icon">🏨</span>
