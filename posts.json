@@ -36,10 +36,9 @@
     "permalink": "https://www.instagram.com/reel/DZFP_XrT1xY/",
     "timestamp": "2026-06-02T11:36:49+0000",
     "media_type": "VIDEO",
-    "daichi": "",
-    "area": "",
+    "daichi": "道央",
+    "area": "札幌",
     "categories": [
-      "温泉",
       "グルメ"
     ]
   },
@@ -53,7 +52,9 @@
     "media_type": "CAROUSEL_ALBUM",
     "daichi": "道央",
     "area": "札幌",
-    "categories": []
+    "categories": [
+      "グルメ"
+    ]
   },
   {
     "id": "17890367580535706",
@@ -63,10 +64,17 @@
     "permalink": "https://www.instagram.com/p/DY9X0OBk2WR/",
     "timestamp": "2026-05-30T10:09:56+0000",
     "media_type": "CAROUSEL_ALBUM",
-    "daichi": "道央",
-    "area": "小樽近郊",
+    "daichi": "",
+    "area": "北海道全体",
     "categories": [
-      "旅行プラン"
+      "旅行プラン",
+      "観光スポット",
+      "グルメ",
+      "体験",
+      "お土産",
+      "温泉",
+      "イベント",
+      "宿泊"
     ]
   },
   {
