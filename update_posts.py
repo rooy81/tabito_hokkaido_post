@@ -23,18 +23,17 @@ AREA_KEYWORDS = {
     '稚内（道北）':                     ['稚内', '宗谷', '利尻', '礼文', '豊富', '幌延'],
     '函館近郊':                         ['函館', '函館山', '五稜郭', '松前', '江差', '長万部', '大沼', '七飯'],
     '帯広近郊（十勝）':                 ['帯広', '十勝', '芽室', '幕別', '音更', '士幌', '池田'],
-    '釧路/根室/知床周辺':               ['釧路', '阿寒', '弟子屈', '川湯',        # 旧・釧路近郊
-                                         '根室', '別海', '中標津', '標茶', '厚岸', # 旧・根室近郊
-                                         '知床', 'ウトロ', '羅臼', '斜里'],        # 旧・知床
-    '網走（オホーツク周辺）':           ['網走', 'オホーツク', '北見', '美幌', '津別', # 旧・網走
-                                         '紋別', 'ガリンコ号'],                    # 旧・紋別を統合
+    '釧路/根室/知床周辺':               ['釧路', '阿寒', '弟子屈', '川湯',
+                                         '根室', '別海', '中標津', '標茶', '厚岸',
+                                         '知床', 'ウトロ', '羅臼', '斜里'],
+    '網走（オホーツク周辺）':           ['網走', 'オホーツク', '北見', '美幌', '津別',
+                                         '紋別', 'ガリンコ号'],
     '登別/白老/洞爺湖/苫小牧方面':     ['登別', '室蘭', '苫小牧', '白老', 'ウポポイ', '洞爺'],
     '日高':                             ['日高', '浦河', '様似', 'えりも', '新冠', '新ひだか', '静内'],
     '小樽近郊':                         ['小樽', '余市', '仁木', '積丹'],
     '新千歳':                           ['新千歳', '千歳空港', '支笏湖', '氷濤まつり', '恵庭'],
     '札幌近郊(札幌以外)':               ['北広島', 'エスコン', 'ボールパーク', 'エスコンフィールド',
                                          '野幌', '石狩', '当別', '江別', '岩見沢'],
-    # 札幌は最後：市内固有スポット → 一般的な「札幌」の順
     '札幌':                             ['すすきの', '薄野', '狸小路', '円山', '大通公園',
                                          '藻岩山', '北海道神宮', '時計台', '中島公園', '北大',
                                          'テレビ塔', 'モエレ沼', '大倉山', '丘珠', '赤れんが庁舎',
@@ -59,45 +58,27 @@ def detect_daichi(area):
             return daichi
     return ''
 
-# ══════════════════════════════════════════════
-#  テキスト前処理
-# ══════════════════════════════════════════════
 def get_body_text(caption):
-    """ハッシュタグ行を除いた本文のみを返す（小文字化済み）
-    Instagramキャプション末尾の #北海道グルメ #函館観光 等が
-    エリア・カテゴリ判定に混入するのを防ぐ。
-    判定基準：行内の # 数が2以上、または行頭が # で始まる行を除外。
-    """
     lines = caption.split('\n')
     body = []
     for line in lines:
         stripped = line.strip()
-        # #で始まる行、または # が2個以上ある行はハッシュタグ行とみなす
         if stripped.startswith('#') or stripped.count('#') >= 2:
             continue
         body.append(line)
     return '\n'.join(body).lower()
 
 def extract_title(caption):
-    """投稿のメインタイトルを抽出。
-    1. 【タイトル】または[タイトル]パターン（3〜80文字）
-    2. なければ本文の最初の行（#なし・3文字以上・50文字まで）を擬似タイトルとして使用
-    """
     m = re.search(r'[【\[]([^】\]]{3,80})[】\]]', caption)
     if m:
         return m.group(1).lower()
-    # フォールバック：最初の意味ある行
     for line in caption.split('\n'):
         line = line.strip()
         if line and not line.startswith('#') and len(line) >= 3:
             return line[:50].lower()
     return ''
 
-# ══════════════════════════════════════════════
-#  エリア・カテゴリ判定
-# ══════════════════════════════════════════════
 def detect_area(caption):
-    """ハッシュタグを除いた本文でエリアを判定（ハッシュタグ地名の誤検出を防ぐ）"""
     body = get_body_text(caption)
     for area, keywords in AREA_KEYWORDS.items():
         for kw in keywords:
@@ -107,9 +88,8 @@ def detect_area(caption):
 
 def detect_categories(caption):
     title = extract_title(caption)
-    body  = get_body_text(caption)   # ハッシュタグ除外・小文字化済み本文
+    body  = get_body_text(caption)
 
-    # ── キーワード定義 ──────────────────────────────────────────
     grume_kw = ['ラーメン', 'スープカレー', '海鮮', '寿司', '焼肉', 'ジンギスカン',
                 'ソフトクリーム', 'スイーツ', 'カフェ', 'ケーキ', 'パン', '居酒屋',
                 '丼', 'アイス', 'チーズ', 'バター', 'ミルク', 'グルメ', '横丁',
@@ -119,7 +99,6 @@ def detect_categories(caption):
     omiyage_kw = ['お土産', 'おみやげ', '土産', '空港限定', 'お取り寄せ', 'ギフト',
                   '六花亭', '白い恋人', 'ロイズ', 'マルセイ', '北菓楼', 'もりもと',
                   '限定スイーツ']
-                  # ※「プレゼント」「新商品」「よつ葉」は汎用すぎるため除外
     hotel_kw      = ['ホテル', '旅館', 'ヴィラ', 'ペンション', 'コテージ', 'グランピング',
                      '宿', '客室', '泊まって', '泊まり']
     hotel_body_kw = ['チェックイン', 'チェックアウト', '泊まってき', '宿泊して']
@@ -127,20 +106,17 @@ def detect_categories(caption):
                  '日帰り湯', '源泉', '温泉街', '足湯', '銭湯']
     event_kw  = ['まつり', '祭り', '花火', 'フェスタ', 'フェス', 'マルシェ', 'イベント',
                  'ライトアップ', '雪まつり', '朝市', 'フェア', 'festival']
-                 # ※「開催」は汎用すぎるため除外
     taiken_kw = ['スキー', 'スノーボード', '登山', 'トレッキング', 'ハイキング', 'カヌー',
                  'ラフティング', 'サイクリング', '乗馬', '釣り', 'キャンプ', 'ジップライン',
                  'さくらんぼ狩り', '果物狩り', '摘み取り', '掘り取り', '収穫体験',
                  'アウトドア体験', 'ツリートレッキング', 'パラグライダー', 'SUP',
                  'ウィンタースポーツ', 'スノーシュー', 'ナイタースキー']
-                 # ※「体験」「アクティビティ」は汎用すぎるため除外（具体的アクティビティ名のみ）
     spot_kw   = ['公園', '展望', '夕日', '夕焼け', 'ラベンダー', '紅葉', '雪景色', '流氷',
                  '湖', '岬', 'フォトスポット', '絶景', '神社', '寺', '灯台', '滝', '夜景',
                  '観光スポット', '名所', '動物園', '水族館', '美術館', '博物館', '遊園地',
                  '庭園', '城', '砂丘', '氷瀑', '樹氷', 'ビュースポット', 'チューリップ',
                  '花畑', '菜の花', 'じゃがいも', '小麦畑', '牧場']
 
-    # ── 旅行プラン：単独で即返却（他カテゴリと混在させない） ──
     if (re.search(r'[0-9１-９]+泊[0-9１-９]+日', title) or
         re.search(r'[0-9１-９]+選', title) or
         re.search(r'(完全攻略|おすすめ.+[0-9]+選|必見スポット|モデルコース|旅行プラン|観光ガイド|まとめ)', title)):
@@ -148,85 +124,42 @@ def detect_categories(caption):
 
     cats = []
 
-    # ── 宿泊：タイトル or 本文の宿泊行動ワード ────────────────
-    # 「宿」はタイトルのみ（本文で「宿泊客」等に誤反応しやすい）
     is_hotel = (any(kw in title for kw in hotel_kw) or
                 any(kw in body  for kw in hotel_body_kw))
     if is_hotel:
         cats.append('宿泊')
 
-    # ── 温泉：宿泊との共存OK（温泉宿は両方付く） ────────────
     if any(kw in body for kw in onsen_kw):
         cats.append('温泉')
 
-    # ── グルメ：タイトルのみ ＋ 宿泊ポストには付けない ────────
-    # ホテルキャプションには朝食・レストラン言及が必ず含まれるため除外
     if any(kw in title for kw in grume_kw) and not is_hotel:
         cats.append('グルメ')
 
-    # ── お土産：タイトル優先、本文は明示的ワードのみ ──────────
     if any(kw in title for kw in omiyage_kw):
         cats.append('お土産')
     elif any(kw in body for kw in ['お土産', 'おみやげ', '空港限定', 'お取り寄せ']):
         cats.append('お土産')
 
-    # ── イベント：タイトル優先 ────────────────────────────────
-    # 本文フォールバックは「まつり」「花火」のみ（ライトアップは観光スポットと重複するため除外）
     if any(kw in title for kw in event_kw):
         cats.append('イベント')
     elif any(kw in body for kw in ['まつり', '祭り', '花火']):
         cats.append('イベント')
 
-    # グルメが確定しているかフラグ（後の除外ルールで使用）
     is_grume = 'グルメ' in cats
 
-    # ── 体験：具体的アクティビティ名のみ（本文チェック） ────────
-    # グルメ投稿には付けない（飲食店はアクティビティではない）
     if any(kw in body for kw in taiken_kw) and not is_grume:
         cats.append('体験')
 
-    # ── 観光スポット：タイトルのみ ───────────────────────────
-    # グルメ投稿には付けない（飲食店は観光スポットではない）
     if any(kw in title for kw in spot_kw) and not is_grume:
         cats.append('観光スポット')
 
     return cats
 
-# ══════════════════════════════════════════════
-#  Instagram 取得・GitHub 読み書き
-# ══════════════════════════════════════════════
 def fetch_instagram_posts():
-    """Instagram Graph API (Business) を使用して投稿を取得する"""
-
-    # Step 1: FacebookアカウントのInstagram Business Account IDを取得
-    me_url = (
-        'https://graph.facebook.com/v21.0/me'
-        '?fields=instagram_business_account'
-        f'&access_token={INSTAGRAM_TOKEN}'
-    )
-    req = urllib.request.Request(me_url)
-    try:
-        with urllib.request.urlopen(req) as resp:
-            me_data = json.loads(resp.read().decode())
-    except Exception as e:
-        print(f'Facebookアカウント情報取得エラー: {e}')
-        raise
-
-    ig_account = me_data.get('instagram_business_account', {})
-    ig_user_id = ig_account.get('id')
-    if not ig_user_id:
-        print(f'レスポンス: {me_data}')
-        raise ValueError(
-            'Instagram Business Accountが見つかりません。'
-            'InstagramアカウントをFacebookページに接続し、'
-            'INSTAGRAM_TOKENのアプリに投稿計測ツールを使用してください。'
-        )
-    print(f'Instagram Business Account ID: {ig_user_id}')
-
-    # Step 2: メディア一覧を取得
+    """Instagram API を使用して投稿を取得する"""
     all_posts = []
     url = (
-        f'https://graph.facebook.com/v21.0/{ig_user_id}/media'
+        'https://graph.instagram.com/v21.0/me/media'
         '?fields=id,caption,media_url,thumbnail_url,permalink,timestamp,media_type'
         '&limit=50'
         f'&access_token={INSTAGRAM_TOKEN}'
@@ -243,19 +176,11 @@ def fetch_instagram_posts():
     return all_posts
 
 def fetch_existing_posts():
-    """GitHub の現在の posts.json を id→post 辞書で返す（常に最新データを取得）
-
-    GitHub Actions内では GITHUB_SHA 環境変数（トリガーコミットのSHA）を使用。
-    raw.githubusercontent.com/main/... はCDNキャッシュで古いデータを返す場合があるが、
-    /{commitSha}/... はSHA別にキャッシュされるため必ず正確な内容を返す。
-    """
-    # GitHub Actions 内で利用可能なトリガーコミットのSHA
     github_sha = os.environ.get('GITHUB_SHA', '')
     if github_sha:
         raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{github_sha}/{GITHUB_FILE}'
         print(f'コミットSHA指定でfetch: {github_sha[:8]}')
     else:
-        # ローカル実行時：APIからSHAを取得してSHA指定URLを使用
         sha = get_current_sha()
         if sha:
             raw_url = f'https://raw.githubusercontent.com/{GITHUB_REPO}/{sha}/{GITHUB_FILE}'
@@ -274,9 +199,6 @@ def fetch_existing_posts():
         return {}
 
 def format_posts(raw_posts, existing_map):
-    """既存IDはエリア・大エリア・カテゴリをすべて保持（手動更新を尊重）。
-    新規IDのみ自動検出。
-    """
     formatted = []
     new_count = 0
     for p in raw_posts:
@@ -285,13 +207,11 @@ def format_posts(raw_posts, existing_map):
         thumbnail = p.get('thumbnail_url') or p.get('media_url', '')
 
         if post_id in existing_map:
-            # 既存投稿：手動設定をすべて保持
             ex         = existing_map[post_id]
             area       = ex.get('area', '')
             daichi     = ex.get('daichi', '') or detect_daichi(area)
             categories = ex.get('categories', [])
         else:
-            # 新規投稿のみ自動検出
             area       = detect_area(caption)
             categories = detect_categories(caption)
             if '旅行プラン' in categories and not area:
@@ -346,9 +266,6 @@ def upload_to_github(posts, sha=None):
         result = json.loads(resp.read().decode())
         print(f"保存完了: {result.get('commit',{}).get('sha','')[:8]}")
 
-# ══════════════════════════════════════════════
-#  メイン
-# ══════════════════════════════════════════════
 existing_map = fetch_existing_posts()
 raw          = fetch_instagram_posts()
 posts        = format_posts(raw, existing_map)
