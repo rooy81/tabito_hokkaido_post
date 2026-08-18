@@ -208,8 +208,8 @@ def format_posts(raw_posts, existing_map):
 
         if post_id in existing_map:
             ex         = existing_map[post_id]
-            area       = ex.get('area', '')
-            daichi     = ex.get('daichi', '') or detect_daichi(area)
+            area       = detect_area(caption) or ex.get('area', '')
+            daichi     = detect_daichi(area)
             categories = ex.get('categories', [])
         else:
             area       = detect_area(caption)
