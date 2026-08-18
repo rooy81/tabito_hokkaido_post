@@ -8,7 +8,7 @@ import os
 INSTAGRAM_TOKEN = os.environ['INSTAGRAM_TOKEN']
 GITHUB_TOKEN    = os.environ['MY_GITHUB_TOKEN']
 GITHUB_REPO     = 'rooy81/tabito_hokkaido_post'
-GITHUB_FILE     = 'posts.json'
+GITHUB_FILE     = 'guide/posts.json'
 
 # ══════════════════════════════════════════════
 #  エリア設定
@@ -196,9 +196,37 @@ def detect_categories(caption):
 #  Instagram 取得・GitHub 読み書き
 # ══════════════════════════════════════════════
 def fetch_instagram_posts():
+    """Instagram Graph API (Business) を使用して投稿を取得する"""
+
+    # Step 1: FacebookアカウントのInstagram Business Account IDを取得
+    me_url = (
+        'https://graph.facebook.com/v21.0/me'
+        '?fields=instagram_business_account'
+        f'&access_token={INSTAGRAM_TOKEN}'
+    )
+    req = urllib.request.Request(me_url)
+    try:
+        with urllib.request.urlopen(req) as resp:
+            me_data = json.loads(resp.read().decode())
+    except Exception as e:
+        print(f'Facebookアカウント情報取得エラー: {e}')
+        raise
+
+    ig_account = me_data.get('instagram_business_account', {})
+    ig_user_id = ig_account.get('id')
+    if not ig_user_id:
+        print(f'レスポンス: {me_data}')
+        raise ValueError(
+            'Instagram Business Accountが見つかりません。'
+            'InstagramアカウントをFacebookページに接続し、'
+            'INSTAGRAM_TOKENのアプリに投稿計測ツールを使用してください。'
+        )
+    print(f'Instagram Business Account ID: {ig_user_id}')
+
+    # Step 2: メディア一覧を取得
     all_posts = []
     url = (
-        'https://graph.instagram.com/me/media'
+        f'https://graph.facebook.com/v21.0/{ig_user_id}/media'
         '?fields=id,caption,media_url,thumbnail_url,permalink,timestamp,media_type'
         '&limit=50'
         f'&access_token={INSTAGRAM_TOKEN}'
