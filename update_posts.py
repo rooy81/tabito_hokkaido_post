@@ -4,6 +4,7 @@ import json
 import base64
 import re
 import os
+import sys
 
 INSTAGRAM_TOKEN = os.environ['INSTAGRAM_TOKEN']
 GITHUB_TOKEN    = os.environ['MY_GITHUB_TOKEN']
@@ -166,8 +167,13 @@ def fetch_instagram_posts():
     )
     while url:
         req = urllib.request.Request(url)
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read().decode())
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read().decode())
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()
+            print(f'::error::Instagram API Error {e.code}: {body}')
+            sys.exit(1)
         posts = data.get('data', [])
         all_posts.extend(posts)
         paging = data.get('paging', {})
