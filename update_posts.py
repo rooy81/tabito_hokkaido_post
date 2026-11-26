@@ -254,26 +254,92 @@ def get_current_sha():
             return None
         raise
 
-def upload_to_github(posts, sha=None):
-    content_b64 = base64.b64encode(
-        json.dumps(posts, ensure_ascii=False, indent=2).encode('utf-8')
-    ).decode('ascii')
-    body = {'message': f'Auto update: {len(posts)} posts', 'content': content_b64}
-    if sha:
-        body['sha'] = sha
+# ═════════════════════════════════════════════
+#  画像をリポジトリに保存（Instagramの画像URLは数日で期限切れになるため）
+# ══════════════════════════════════════════════
+IMAGE_DIR      = 'images'
+IMAGE_BASE_URL = f'https://rooy81.github.io/tabito_hokkaido_post/{IMAGE_DIR}'
+
+def gh_api(method, path, body=None):
     req = urllib.request.Request(
-        f'https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE}',
-        data=json.dumps(body).encode('utf-8'), method='PUT'
+        f'https://api.github.com/repos/{GITHUB_REPO}{path}',
+        data=json.dumps(body).encode('utf-8') if body is not None else None,
+        method=method
     )
     req.add_header('Authorization', f'token {GITHUB_TOKEN}')
-    req.add_header('Content-Type', 'application/json')
     req.add_header('Accept', 'application/vnd.github.v3+json')
+    if body is not None:
+        req.add_header('Content-Type', 'application/json')
     with urllib.request.urlopen(req) as resp:
-        result = json.loads(resp.read().decode())
-        print(f"保存完了: {result.get('commit',{}).get('sha','')[:8]}")
+        return json.loads(resp.read().decode())
+
+def existing_image_ids():
+    """リポジトリに保存済みの画像ID一覧（チェックアウト済みのフォルダとAPIの両方を確認）"""
+    ids = set()
+    if os.path.isdir(IMAGE_DIR):
+        ids |= {f[:-4] for f in os.listdir(IMAGE_DIR) if f.endswith('.jpg')}
+    try:
+        tree = gh_api('GET', '/git/trees/main?recursive=1')
+        for t in tree.get('tree', []):
+            p = t.get('path', '')
+            if p.startswith(IMAGE_DIR + '/') and p.endswith('.jpg'):
+                ids.add(p[len(IMAGE_DIR) + 1:-4])
+    except Exception as e:
+        print(f'画像一覧の取得に失敗（続行）: {e}')
+    return ids
+
+def download(url):
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read()
+
+def attach_images(posts):
+    """新しい投稿の画像をダウンロードし、各投稿の画像URLを自前の保存先に差し替える"""
+    saved   = existing_image_ids()
+    new_imgs = {}
+    for p in posts:
+        pid = p['id']
+        ig_url = p.get('thumbnail_url') or p.get('media_url') or ''
+        p['ig_thumbnail_url'] = ig_url
+        if pid not in saved and ig_url:
+            try:
+                new_imgs[pid] = download(ig_url)
+                saved.add(pid)
+            except Exception as e:
+                print(f'画像DL失敗 {pid}: {e}')
+        if pid in saved:
+            p['thumbnail_url'] = f'{IMAGE_BASE_URL}/{pid}.jpg'
+    print(f'画像: 新規保存 {len(new_imgs)}件 / 保存済み {len(saved)}件')
+    return new_imgs
+
+def commit_all(posts, new_imgs):
+    """posts.json と新しい画像を1つのコミットでまとめて保存"""
+    ref        = gh_api('GET', '/git/ref/heads/main')
+    head_sha   = ref['object']['sha']
+    base_tree  = gh_api('GET', f'/git/commits/{head_sha}')['tree']['sha']
+
+    entries = []
+    for i, (pid, data) in enumerate(new_imgs.items(), 1):
+        blob = gh_api('POST', '/git/blobs', {
+            'content': base64.b64encode(data).decode('ascii'), 'encoding': 'base64'})
+        entries.append({'path': f'{IMAGE_DIR}/{pid}.jpg', 'mode': '100644',
+                        'type': 'blob', 'sha': blob['sha']})
+        if i % 50 == 0:
+            print(f'  画像アップロード {i}/{len(new_imgs)}')
+
+    posts_json = json.dumps(posts, ensure_ascii=False, indent=2)
+    entries.append({'path': GITHUB_FILE, 'mode': '100644', 'type': 'blob',
+                    'content': posts_json})
+
+    tree   = gh_api('POST', '/git/trees', {'base_tree': base_tree, 'tree': entries})
+    commit = gh_api('POST', '/git/commits', {
+        'message': f'Auto update: {len(posts)} posts (+{len(new_imgs)} images)',
+        'tree': tree['sha'], 'parents': [head_sha]})
+    gh_api('PATCH', '/git/refs/heads/main', {'sha': commit['sha']})
+    print(f"保存完了: {commit['sha'][:8]}")
 
 existing_map = fetch_existing_posts()
 raw          = fetch_instagram_posts()
 posts        = format_posts(raw, existing_map)
-sha          = get_current_sha()
-upload_to_github(posts, sha)
+new_imgs     = attach_images(posts)
+commit_all(posts, new_imgs)
