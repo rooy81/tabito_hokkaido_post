@@ -1,0 +1,21 @@
+name: Reauth Instagram
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: 'サイトに表示されたコードを貼り付け'
+        required: true
+jobs:
+  reauth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exchange code and update INSTAGRAM_TOKEN
+        env:
+          CODE: ${{ github.event.inputs.code }}
+          IG_APP_SECRET: ${{ secrets.IG_APP_SECRET }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        run: python reauth.py
